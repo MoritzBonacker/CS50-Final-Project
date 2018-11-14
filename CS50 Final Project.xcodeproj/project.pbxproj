@@ -13,8 +13,6 @@
 		DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5E113D219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld */; };
 		DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */; };
 		DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */; };
-		DC5E114F219B9BDE00BDE9B9 /* CS50_Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E114E219B9BDE00BDE9B9 /* CS50_Final_ProjectTests.swift */; };
-		DC5E115A219B9BDE00BDE9B9 /* CS50_Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1159219B9BDE00BDE9B9 /* CS50_Final_ProjectUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC5E1133219B9BDB00BDE9B9 /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS50 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5E1133219B9BDB00BDE9B9 /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "CS50 Final Project.app"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final Project.app"; sourceTree = "<absolute>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC5E113B219B9BDB00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,12 +41,8 @@
 		DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5E1143219B9BDD00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5E1145219B9BDD00BDE9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC5E114A219B9BDE00BDE9B9 /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC5E114E219B9BDE00BDE9B9 /* CS50_Final_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS50_Final_ProjectTests.swift; sourceTree = "<group>"; };
-		DC5E1150219B9BDE00BDE9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC5E1155219B9BDE00BDE9B9 /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC5E1159219B9BDE00BDE9B9 /* CS50_Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS50_Final_ProjectUITests.swift; sourceTree = "<group>"; };
-		DC5E115B219B9BDE00BDE9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5E114A219B9BDE00BDE9B9 /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CS50 Final ProjectTests.xctest"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final ProjectTests.xctest"; sourceTree = "<absolute>"; };
+		DC5E1155219B9BDE00BDE9B9 /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CS50 Final ProjectUITests.xctest"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final ProjectUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5E1135219B9BDB00BDE9B9 /* CS50 Final Project */,
-				DC5E114D219B9BDE00BDE9B9 /* CS50 Final ProjectTests */,
-				DC5E1158219B9BDE00BDE9B9 /* CS50 Final ProjectUITests */,
-				DC5E1134219B9BDB00BDE9B9 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		DC5E1134219B9BDB00BDE9B9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DC5E1133219B9BDB00BDE9B9 /* CS50 Final Project.app */,
-				DC5E114A219B9BDE00BDE9B9 /* CS50 Final ProjectTests.xctest */,
-				DC5E1155219B9BDE00BDE9B9 /* CS50 Final ProjectUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DC5E1135219B9BDB00BDE9B9 /* CS50 Final Project */ = {
@@ -108,24 +89,6 @@
 				DC5E113D219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld */,
 			);
 			path = "CS50 Final Project";
-			sourceTree = "<group>";
-		};
-		DC5E114D219B9BDE00BDE9B9 /* CS50 Final ProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC5E114E219B9BDE00BDE9B9 /* CS50_Final_ProjectTests.swift */,
-				DC5E1150219B9BDE00BDE9B9 /* Info.plist */,
-			);
-			path = "CS50 Final ProjectTests";
-			sourceTree = "<group>";
-		};
-		DC5E1158219B9BDE00BDE9B9 /* CS50 Final ProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DC5E1159219B9BDE00BDE9B9 /* CS50_Final_ProjectUITests.swift */,
-				DC5E115B219B9BDE00BDE9B9 /* Info.plist */,
-			);
-			path = "CS50 Final ProjectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +179,7 @@
 				Base,
 			);
 			mainGroup = DC5E112A219B9BDB00BDE9B9;
-			productRefGroup = DC5E1134219B9BDB00BDE9B9 /* Products */;
+			productRefGroup = DC5E112A219B9BDB00BDE9B9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -269,7 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5E114F219B9BDE00BDE9B9 /* CS50_Final_ProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5E115A219B9BDE00BDE9B9 /* CS50_Final_ProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
