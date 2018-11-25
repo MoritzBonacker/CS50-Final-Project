@@ -53,7 +53,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-EC-QqR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button Donate.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-EC-QqR">
                                 <rect key="frame" x="67" y="73" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -139,7 +139,7 @@
                                     <segue destination="ghG-Uf-ogb" kind="presentation" identifier="RegisterPage" id="Hjw-7e-lKT"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-Kv-AcA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button Donate.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-Kv-AcA">
                                 <rect key="frame" x="67" y="73" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -180,7 +180,10 @@
             <point key="canvasLocation" x="1864.8" y="114.69265367316342"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button Donate.jpg" width="784" height="299"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzV-iM-JWv"/>
+        <segue reference="gB8-S4-Ybe"/>
     </inferredMetricsTieBreakers>
 </document>

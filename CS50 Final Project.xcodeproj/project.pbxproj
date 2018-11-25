@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
 		DC5E1139219B9BDB00BDE9B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */; };
 		DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E113A219B9BDB00BDE9B9 /* Main.storyboard */; };
@@ -33,7 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC5E1133219B9BDB00BDE9B9 /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "CS50 Final Project.app"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final Project.app"; sourceTree = "<absolute>"; };
+		2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS50 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Button Donate.jpg"; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC5E113B219B9BDB00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,8 +45,6 @@
 		DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5E1143219B9BDD00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5E1145219B9BDD00BDE9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC5E114A219B9BDE00BDE9B9 /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CS50 Final ProjectTests.xctest"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final ProjectTests.xctest"; sourceTree = "<absolute>"; };
-		DC5E1155219B9BDE00BDE9B9 /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CS50 Final ProjectUITests.xctest"; path = "/Users/moritzbonacker/Documents/CS50 Final Project/build/Debug-iphoneos/CS50 Final ProjectUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				DC5E1135219B9BDB00BDE9B9 /* CS50 Final Project */,
+				2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */,
+				2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */,
+				2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +88,7 @@
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
 				DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */,
 				DC5E113A219B9BDB00BDE9B9 /* Main.storyboard */,
+				2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */,
 				DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */,
 				DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */,
 				DC5E1145219B9BDD00BDE9B9 /* Info.plist */,
@@ -108,7 +114,7 @@
 			);
 			name = "CS50 Final Project";
 			productName = "CS50 Final Project";
-			productReference = DC5E1133219B9BDB00BDE9B9 /* CS50 Final Project.app */;
+			productReference = 2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC5E1149219B9BDE00BDE9B9 /* CS50 Final ProjectTests */ = {
@@ -126,7 +132,7 @@
 			);
 			name = "CS50 Final ProjectTests";
 			productName = "CS50 Final ProjectTests";
-			productReference = DC5E114A219B9BDE00BDE9B9 /* CS50 Final ProjectTests.xctest */;
+			productReference = 2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DC5E1154219B9BDE00BDE9B9 /* CS50 Final ProjectUITests */ = {
@@ -144,7 +150,7 @@
 			);
 			name = "CS50 Final ProjectUITests";
 			productName = "CS50 Final ProjectUITests";
-			productReference = DC5E1155219B9BDE00BDE9B9 /* CS50 Final ProjectUITests.xctest */;
+			productReference = 2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -198,6 +204,7 @@
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
+				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
