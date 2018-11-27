@@ -10,6 +10,9 @@ import Foundation
 import Firebase
 
 
+
+// Hallo hacker 2
+
 struct Charity {
     
     let key: String
