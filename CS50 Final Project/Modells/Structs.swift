@@ -17,7 +17,7 @@ import Firebase
 // Julian
 // BlaBla
 struct Charity {
-    // Test
+    // Test Hallo Moritz
     let key: String
     let name: String
     let category: String
