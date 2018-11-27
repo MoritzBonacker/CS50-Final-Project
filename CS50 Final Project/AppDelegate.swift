@@ -6,8 +6,6 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
-// Do you see my change?
-
 import UIKit
 import CoreData
 
