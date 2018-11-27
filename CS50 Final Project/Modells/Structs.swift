@@ -6,17 +6,9 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
-// Hallo hacker
-
 import Foundation
 import Firebase
-//schreiben
 
-
-// Hallo hacker 2
-// Moritz
-// BlaBla
-// New
 struct Charity {
     // Test Hallo Moritz
     let key: String
