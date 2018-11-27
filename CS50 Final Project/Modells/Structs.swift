@@ -13,7 +13,7 @@ import Firebase
 
 
 struct Charity {
-    
+    // Du bist ein Hacker
     let key: String
     let name: String
     let category: String
