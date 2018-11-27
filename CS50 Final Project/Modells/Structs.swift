@@ -14,7 +14,7 @@ import Firebase
 
 
 // Hallo hacker 2
-
+// Moritz
 struct Charity {
     // Test
     let key: String
