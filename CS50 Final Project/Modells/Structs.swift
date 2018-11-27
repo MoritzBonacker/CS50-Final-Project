@@ -14,7 +14,7 @@ import Firebase
 
 
 // Hallo hacker 2
-// Julian
+// Moritz
 // BlaBla
 struct Charity {
     // Test
