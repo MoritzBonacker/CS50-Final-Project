@@ -14,22 +14,58 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="0vi-vl-ZDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Protected Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evu-Eo-eif">
-                                <rect key="frame" x="16" y="111" width="343" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-Di-ooe">
+                                <rect key="frame" x="85" y="105" width="139" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tN-Wa-2ds">
+                                        <rect key="frame" x="40.5" y="0.0" width="58" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Oki-oC-4Pz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="Menu"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwi-mO-oA0">
+                                        <rect key="frame" x="45" y="68" width="49" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aDv-dy-yFR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Home"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0X-8J-N1A">
+                                        <rect key="frame" x="0.0" y="136" width="139" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Y67-6t-dXW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Charity Overview"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txo-Rg-3B8">
+                                        <rect key="frame" x="15" y="204" width="109" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7Ad-3f-UZd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Swipe Modus"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n0X-8J-N1A" firstAttribute="top" secondItem="zwi-mO-oA0" secondAttribute="bottom" id="g3O-P1-soo"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="79Z-I1-TC5"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="yms-M7-3qp"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="AlE-S6-PQb" kind="presentation" identifier="LoginPage" id="vzV-iM-JWv"/>
                     </connections>
@@ -94,7 +130,7 @@
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AlE-S6-PQb" kind="presentation" id="gB8-S4-Ybe"/>
+                                    <segue destination="AlE-S6-PQb" kind="presentation" identifier="BackToLoginPage" id="gB8-S4-Ybe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6F-Vk-B84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="828"/>
+            <point key="canvasLocation" x="3254" y="911"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E16-WD-ykh">
@@ -179,11 +215,24 @@
             </objects>
             <point key="canvasLocation" x="1864.8" y="114.69265367316342"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="44V-Ey-EzM">
+            <objects>
+                <viewController id="p78-ge-kxt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWy-E2-GKE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jId-gq-dyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Button Donate.jpg" width="784" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gB8-S4-Ybe"/>
+        <segue reference="vzV-iM-JWv"/>
     </inferredMetricsTieBreakers>
 </document>
