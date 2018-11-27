@@ -8,6 +8,9 @@
 
 import Foundation
 import Firebase
+import Firestore
+
+db.collection
 
 struct Charity {
     // Test Hallo Moritz
