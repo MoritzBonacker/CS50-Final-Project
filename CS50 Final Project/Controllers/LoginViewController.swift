@@ -24,10 +24,23 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool){
     }
     
+    let loginToMenu = "loginToMenu"
+    
     // Login functionality
     @IBAction func tappedLogin(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!)
-        performSegue(withIdentifier: "loginToMenu", sender: nil)
+        
+        if let user = Auth.auth().currentUser {
+            self.performSegue(withIdentifier: "loginToMenu", sender: nil)
+        }/*{ user, error in
+            if user == nil || error != nil {
+                print("There was an error")
+            }
+            else {
+                print("Successfully logged in")
+                self.performSegue(withIdentifier: "loginToMenu", sender: nil)
+            }
+        } */
     }
     
     // Register functionality
@@ -40,13 +53,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var RegisterConfirmation: UITextField!
     
     @IBAction func tappedRegistered(_ sender: UIButton) {
-        /*
+        
         if RegisterPassword.text! != RegisterConfirmation.text! {
             return
         }
- */
-        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)
-        Auth.auth().signIn(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)
+        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!) { user, error in
+            if error == nil && user != nil {
+                print("User created!")
+            }
+            else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+        // Auth.auth().signIn(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)
         self.performSegue(withIdentifier: "registerToMenu", sender: self);
     }
 }

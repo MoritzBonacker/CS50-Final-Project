@@ -193,7 +193,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedLogin:" destination="AlE-S6-PQb" eventType="touchUpInside" id="Gds-uq-O4H"/>
-                                    <action selector="tappedLogin:" destination="oDz-Vq-uVL" eventType="touchUpInside" id="n7Y-dj-JD5"/>
                                     <segue destination="obC-DC-QvM" kind="presentation" identifier="loginToMenu" id="H4c-Fi-hrl"/>
                                 </connections>
                             </button>
@@ -284,6 +283,6 @@
         <image name="Button Donate.jpg" width="784" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XB6-eV-IS1"/>
+        <segue reference="H4c-Fi-hrl"/>
     </inferredMetricsTieBreakers>
 </document>
