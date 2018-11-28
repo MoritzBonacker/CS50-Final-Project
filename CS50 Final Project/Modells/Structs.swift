@@ -1,4 +1,4 @@
-//
+/*
 //  File.swift
 //  CS50 Final Project
 //
@@ -8,9 +8,9 @@
 
 import Foundation
 import Firebase
-import Firestore
+// import Firestore
 
-db.collection
+// db.collection
 
 struct Charity {
     // Test Hallo Moritz
@@ -70,4 +70,4 @@ struct Users {
         self.Email = Email
     }
 }
-
+*/

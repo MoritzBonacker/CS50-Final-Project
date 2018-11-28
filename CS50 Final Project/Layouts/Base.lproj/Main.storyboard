@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="obC-DC-QvM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AlE-S6-PQb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -66,18 +66,15 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yms-M7-3qp"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="AlE-S6-PQb" kind="presentation" identifier="LoginPage" id="vzV-iM-JWv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2533.5999999999999" y="114.69265367316342"/>
+            <point key="canvasLocation" x="2649" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="621-vt-Jcs">
             <objects>
-                <viewController id="ghG-Uf-ogb" sceneMemberID="viewController">
+                <viewController id="ghG-Uf-ogb" customClass="LoginViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W40-YE-SW8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +118,10 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedRegistered:" destination="ghG-Uf-ogb" eventType="touchUpInside" id="apl-dl-uVA"/>
+                                    <segue destination="obC-DC-QvM" kind="presentation" identifier="registerToMenu" id="XB6-eV-IS1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-y3-3X4">
                                 <rect key="frame" x="67" y="440" width="240" height="30"/>
@@ -129,23 +130,25 @@
                                 <state key="normal" title="I have an account. Let me log in.">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="AlE-S6-PQb" kind="presentation" identifier="BackToLoginPage" id="gB8-S4-Ybe"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VU1-ec-AOe"/>
                     </view>
+                    <connections>
+                        <outlet property="RegisterConfirmation" destination="PmX-W3-kWh" id="y1u-e6-S8I"/>
+                        <outlet property="RegisterEmail" destination="ahp-7y-Svu" id="7lG-zk-7x5"/>
+                        <outlet property="RegisterPassword" destination="PUo-ik-5JG" id="ej8-7c-w3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6F-Vk-B84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="911"/>
+            <point key="canvasLocation" x="1582" y="-697"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="E16-WD-ykh">
             <objects>
-                <viewController id="AlE-S6-PQb" sceneMemberID="viewController">
+                <viewController id="AlE-S6-PQb" customClass="LoginViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wl1-Fe-qie">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +175,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ghG-Uf-ogb" kind="presentation" identifier="RegisterPage" id="Hjw-7e-lKT"/>
+                                    <action selector="tappedRegister:" destination="AlE-S6-PQb" eventType="touchUpInside" id="JUn-4P-JPo"/>
+                                    <action selector="tappedRegister:" destination="oDz-Vq-uVL" eventType="touchUpInside" id="WEW-EU-RLN"/>
+                                    <segue destination="ghG-Uf-ogb" kind="presentation" identifier="loginToRegister" id="Hjw-7e-lKT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button Donate.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-Kv-AcA">
@@ -186,16 +191,26 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedLogin:" destination="AlE-S6-PQb" eventType="touchUpInside" id="Gds-uq-O4H"/>
+                                    <action selector="tappedLogin:" destination="oDz-Vq-uVL" eventType="touchUpInside" id="n7Y-dj-JD5"/>
+                                    <segue destination="obC-DC-QvM" kind="presentation" identifier="loginToMenu" id="H4c-Fi-hrl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EQG-X9-ojA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kmd-x1-OIM"/>
+                    <connections>
+                        <outlet property="LoginEmail" destination="MzG-1m-Mi5" id="CCQ-FG-KgG"/>
+                        <outlet property="LoginPassword" destination="bTd-qi-a9Z" id="QOY-vN-05q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPb-tc-9CJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oDz-Vq-uVL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3255" y="115"/>
+            <point key="canvasLocation" x="226" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ic8-U6-BZz">
@@ -213,7 +228,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-XR-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864.8" y="114.69265367316342"/>
+            <point key="canvasLocation" x="1582" y="115"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="44V-Ey-EzM">
@@ -269,6 +284,6 @@
         <image name="Button Donate.jpg" width="784" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzV-iM-JWv"/>
+        <segue reference="XB6-eV-IS1"/>
     </inferredMetricsTieBreakers>
 </document>

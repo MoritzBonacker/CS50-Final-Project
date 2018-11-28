@@ -15,7 +15,7 @@
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
-		DC5E1139219B9BDB00BDE9B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */; };
+		DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */; };
 		DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E113A219B9BDB00BDE9B9 /* Main.storyboard */; };
 		DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5E113D219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld */; };
 		DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */; };
@@ -58,7 +58,7 @@
 		C8A0765F21ACEB9F005EA977 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = Modells/Structs.swift; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC5E113B219B9BDB00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC5E113E219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS50_Final_Project.xcdatamodel; sourceTree = "<group>"; };
 		DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
-				DC5E1138219B9BDB00BDE9B9 /* ViewController.swift */,
+				DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -423,7 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
-				DC5E1139219B9BDB00BDE9B9 /* ViewController.swift in Sources */,
+				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
 				DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */,

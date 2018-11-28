@@ -1,4 +1,4 @@
-//
+/*
 //  TableViewController.swift
 //  CS50 Final Project
 //
@@ -20,10 +20,12 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        db = Firestore.firestore()
-        loadData()
+    db = Firestore.firestore()
+     loadData()
         checkForUpdates()
         
         
     }
 }
+
+ */
