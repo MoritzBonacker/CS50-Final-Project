@@ -28,15 +28,10 @@ class LoginViewController: UIViewController {
     
     // Login functionality
     @IBAction func tappedLogin(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!)
-        
-            { user, error in
-            if user == nil || error != nil {
+        Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!) { user, error in
+            if error == nil {
                 print("There was an error")
-            }
-            else {
-                print("Successfully logged in")
-                self.performSegue(withIdentifier: "loginToMenu", sender: nil)
+                self.performSegue(withIdentifier: "loginToMenu", sender: self)
             }
         }
     }
@@ -55,7 +50,7 @@ class LoginViewController: UIViewController {
         if RegisterPassword.text! != RegisterConfirmation.text! {
             return
         }
-        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!) { user, error in
+        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!) /* { user, error in
             if error == nil && user != nil {
                 print("User created!")
             }
@@ -63,7 +58,21 @@ class LoginViewController: UIViewController {
                 print("Error: \(error?.localizedDescription)")
             }
         }
+ */
         // Auth.auth().signIn(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)
-        self.performSegue(withIdentifier: "registerToMenu", sender: self);
+       // self.performSegue(withIdentifier: "registerToMenu", sender: self);
     }
+   /*
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "loginToMenu" {
+            if Auth.auth().currentUser == nil {
+                print("No Segue")
+                return false
+            }
+            else {
+                print("Segue")
+            }
+        }
+        return true
+    } */
 }
