@@ -30,9 +30,7 @@ class LoginViewController: UIViewController {
     @IBAction func tappedLogin(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!)
         
-        if let user = Auth.auth().currentUser {
-            self.performSegue(withIdentifier: "loginToMenu", sender: nil)
-        }/*{ user, error in
+            { user, error in
             if user == nil || error != nil {
                 print("There was an error")
             }
@@ -40,7 +38,7 @@ class LoginViewController: UIViewController {
                 print("Successfully logged in")
                 self.performSegue(withIdentifier: "loginToMenu", sender: nil)
             }
-        } */
+        }
     }
     
     // Register functionality
