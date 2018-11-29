@@ -4,7 +4,7 @@
 //
 //  Created by Julian Frings on 28.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-//
+//Charity UI
 
 import UIKit
 
