@@ -1,4 +1,4 @@
-//
+// aa
 //  ViewController.swift
 //  CS50 Final Project
 //
@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
             if error != nil || user == nil {
                 print("There was an error")
                 self.createAlert(title: "Error", message: "Login not successful")
-                return 
+                return
             }
             else {
                 print("Successfully logged in")
