@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
  
     
     override func viewDidAppear(_ animated: Bool){
+        self.performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     let loginToMenu = "loginToMenu"
@@ -87,4 +88,5 @@ class LoginViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
 }
