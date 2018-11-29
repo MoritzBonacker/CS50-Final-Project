@@ -19,6 +19,8 @@
 		C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE42921AF588B0055E4A3 /* Education.png */; };
 		C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE42A21AF588B0055E4A3 /* Animals.png */; };
 		C8ABE43021AF588B0055E4A3 /* Health.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE42B21AF588B0055E4A3 /* Health.png */; };
+		C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43121AF5B7C0055E4A3 /* Donate.png */; };
+		C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
@@ -70,6 +72,8 @@
 		C8ABE42921AF588B0055E4A3 /* Education.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Education.png; sourceTree = "<group>"; };
 		C8ABE42A21AF588B0055E4A3 /* Animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Animals.png; sourceTree = "<group>"; };
 		C8ABE42B21AF588B0055E4A3 /* Health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Health.png; sourceTree = "<group>"; };
+		C8ABE43121AF5B7C0055E4A3 /* Donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Donate.png; sourceTree = "<group>"; };
+		C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -131,13 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				C8A0765F21ACEB9F005EA977 /* Structs.swift */,
-				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
-				C8ABE42A21AF588B0055E4A3 /* Animals.png */,
-				C8ABE42921AF588B0055E4A3 /* Education.png */,
-				C8ABE42721AF588B0055E4A3 /* Environment.png */,
-				C8ABE42B21AF588B0055E4A3 /* Health.png */,
-				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
-				C8ABE42321AF58660055E4A3 /* ViewController.swift */,
 				C809A5B521AD151B00CF6B5E /* TableViewController.swift */,
 			);
 			name = Modells;
@@ -156,6 +153,9 @@
 		DC415E4321ACE2C7008FC5ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
+				C8ABE42321AF58660055E4A3 /* ViewController.swift */,
+				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
 				DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */,
 			);
@@ -165,6 +165,12 @@
 		DC415E4421ACE2DD008FC5ED /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				C8ABE42A21AF588B0055E4A3 /* Animals.png */,
+				C8ABE42921AF588B0055E4A3 /* Education.png */,
+				C8ABE42721AF588B0055E4A3 /* Environment.png */,
+				C8ABE42B21AF588B0055E4A3 /* Health.png */,
+				C8ABE43121AF5B7C0055E4A3 /* Donate.png */,
+				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
 				2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */,
 			);
 			path = Pictures;
@@ -324,6 +330,7 @@
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
+				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
@@ -449,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8ABE42421AF58660055E4A3 /* ViewController.swift in Sources */,
+				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
