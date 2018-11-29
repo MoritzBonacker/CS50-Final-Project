@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="115"/>
+            <point key="canvasLocation" x="3657" y="115"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="621-vt-Jcs">
@@ -193,7 +193,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedLogin:" destination="AlE-S6-PQb" eventType="touchUpInside" id="Gds-uq-O4H"/>
-                                    <segue destination="obC-DC-QvM" kind="presentation" identifier="loginToMenu" id="H4c-Fi-hrl"/>
+                                    <segue destination="obC-DC-QvM" kind="show" identifier="loginToMenu" id="LHO-94-fen"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,7 +222,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="57m-bU-b4J"/>
+                        <segue destination="KJC-3C-rYc" kind="relationship" relationship="rootViewController" id="NIw-aQ-gAX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-XR-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,7 +281,7 @@
         <!--View Controller-->
         <scene sceneID="X8R-eK-BSm">
             <objects>
-                <viewController id="KJC-3C-rYc" customClass="ViewController" customModule="CategoriesCharity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KJC-3C-rYc" customClass="ViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFw-Nd-A2d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,7 +291,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="category" rowHeight="96" id="sRB-eo-zGr" customClass="ViewControllerTableViewCell" customModule="CategoriesCharity" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="category" rowHeight="96" id="sRB-eo-zGr" customClass="ViewControllerTableViewCell" customModule="CS50_Final_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sRB-eo-zGr" id="sFh-2R-kw8">
@@ -341,16 +341,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2Pj-jL-oza"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8qH-u5-VMl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxr-Do-Mzn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="812"/>
+            <point key="canvasLocation" x="2730" y="115"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button Donate.jpg" width="784" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H4c-Fi-hrl"/>
+        <segue reference="LHO-94-fen"/>
     </inferredMetricsTieBreakers>
 </document>
