@@ -9,7 +9,13 @@
 import UIKit
 
 class DonateThanksViewController: UIViewController {
-
+    
+    
+    @IBAction func returnToCategories(_ sender: Any) {
+        performSegue(withIdentifier: "returnToCategories", sender: self)
+    }
+    
+    
     @IBOutlet weak var ReturnButton: UIButton!
     
     override func viewDidLoad() {

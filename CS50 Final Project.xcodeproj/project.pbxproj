@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200D88C344ADBFD0CA1BD5CA /* Pods_CS50_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CD9531A590278096606347 /* Pods_CS50_Final_ProjectTests.framework */; };
+		2CC2718C21B120740078F0B3 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2718B21B120730078F0B3 /* user.png */; };
 		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
@@ -25,6 +26,9 @@
 		C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */; };
 		C8ABE43A21B0E5FC0055E4A3 /* DonateThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */; };
 		C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */; };
+		C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */; };
+		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
+		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
@@ -61,6 +65,7 @@
 /* Begin PBXFileReference section */
 		0882FF57E7102A021791C7B7 /* Pods-CS50 Final ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2AFC19757CD5F314B789AD38 /* Pods-CS50 Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.release.xcconfig"; sourceTree = "<group>"; };
+		2CC2718B21B120730078F0B3 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS50 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +92,9 @@
 		C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountains.jpg; sourceTree = "<group>"; };
 		C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateThanksViewController.swift; sourceTree = "<group>"; };
 		C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
+		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5E113A219B9BDB00BDE9B9 /* Main.storyboard */,
+				C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */,
 				DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */,
 			);
 			path = Layouts;
@@ -171,6 +180,7 @@
 		DC415E4321ACE2C7008FC5ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */,
 				C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */,
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
 				C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */,
@@ -193,6 +203,8 @@
 				DCB9197521B0CF26000F051F /* WWF.png */,
 				DCB9197721B0CFC1000F051F /* unicef.png */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
+				C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */,
+				2CC2718B21B120730078F0B3 /* user.png */,
 				DCB9197D21B0D0D5000F051F /* acs.png */,
 				DCB9197B21B0D0A4000F051F /* greenpeace.jpg */,
 				DCB9197921B0D029000F051F /* stc.png */,
@@ -350,14 +362,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */,
+				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
+				C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
 				DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */,
 				C8ABE42C21AF588B0055E4A3 /* Environment.png in Resources */,
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
+				2CC2718C21B120740078F0B3 /* user.png in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
 				DCB9197621B0CF27000F051F /* WWF.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
@@ -494,6 +509,7 @@
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
 				C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
+				C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
