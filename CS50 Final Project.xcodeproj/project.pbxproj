@@ -25,6 +25,10 @@
 		C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */; };
 		C8ABE43A21B0E5FC0055E4A3 /* DonateThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */; };
 		C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */; };
+		C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */; };
+		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
+		C8ABE44421B0F52B0055E4A3 /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44321B0F52B0055E4A3 /* User.png */; };
+		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
@@ -87,6 +91,10 @@
 		C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountains.jpg; sourceTree = "<group>"; };
 		C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateThanksViewController.swift; sourceTree = "<group>"; };
 		C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
+		C8ABE44321B0F52B0055E4A3 /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = User.png; path = ../../../Images/User.png; sourceTree = "<group>"; };
+		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5E113A219B9BDB00BDE9B9 /* Main.storyboard */,
+				C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */,
 				DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */,
 			);
 			path = Layouts;
@@ -171,6 +180,7 @@
 		DC415E4321ACE2C7008FC5ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */,
 				C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */,
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
 				C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */,
@@ -193,6 +203,8 @@
 				DCB9197521B0CF26000F051F /* WWF.png */,
 				DCB9197721B0CFC1000F051F /* unicef.png */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
+				C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */,
+				C8ABE44321B0F52B0055E4A3 /* User.png */,
 				DCB9197D21B0D0D5000F051F /* acs.png */,
 				DCB9197B21B0D0A4000F051F /* greenpeace.jpg */,
 				DCB9197921B0D029000F051F /* stc.png */,
@@ -350,9 +362,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */,
+				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
+				C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
 				DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */,
 				C8ABE42C21AF588B0055E4A3 /* Environment.png in Resources */,
@@ -362,6 +376,7 @@
 				DCB9197621B0CF27000F051F /* WWF.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
+				C8ABE44421B0F52B0055E4A3 /* User.png in Resources */,
 				DCB9197C21B0D0A4000F051F /* greenpeace.jpg in Resources */,
 				DCB9197E21B0D0D5000F051F /* acs.png in Resources */,
 				DCB9197821B0CFC2000F051F /* unicef.png in Resources */,
@@ -494,6 +509,7 @@
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
 				C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
+				C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
