@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="925"/>
+            <point key="canvasLocation" x="2988" y="841"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="621-vt-Jcs">
@@ -120,7 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedRegistered:" destination="ghG-Uf-ogb" eventType="touchUpInside" id="apl-dl-uVA"/>
-                                    <segue destination="WEp-FB-Js9" kind="presentation" id="SeA-cP-TNL"/>
+                                    <segue destination="WEp-FB-Js9" kind="presentation" identifier="registerToMenu" id="SeA-cP-TNL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-y3-3X4">
