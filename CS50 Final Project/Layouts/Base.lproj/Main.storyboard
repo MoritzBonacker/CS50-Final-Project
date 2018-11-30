@@ -18,49 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-Di-ooe">
-                                <rect key="frame" x="85" y="105" width="139" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="WWc-Di-ooe">
+                                <rect key="frame" x="-16" y="407" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="5K3-zf-GqS"/>
+                                    <constraint firstAttribute="height" constant="50" id="NDI-q1-sZI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="PjA-oa-Rf9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="qwF-CP-3jf"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="rt2-Wz-9nX"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-Nf-Q1P">
+                                <rect key="frame" x="0.0" y="20" width="375" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tN-Wa-2ds">
-                                        <rect key="frame" x="40.5" y="0.0" width="58" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Oki-oC-4Pz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfl-T6-MPc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <state key="normal" title="Menu"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwi-mO-oA0">
-                                        <rect key="frame" x="45" y="68" width="49" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="aDv-dy-yFR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Home"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj5-Sd-XGO">
+                                        <rect key="frame" x="0.0" y="38" width="375" height="30"/>
+                                        <state key="normal" title="Profile"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0X-8J-N1A">
-                                        <rect key="frame" x="0.0" y="136" width="139" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Y67-6t-dXW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Charity Overview"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txo-Rg-3B8">
-                                        <rect key="frame" x="15" y="204" width="109" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="7Ad-3f-UZd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Swipe Modus"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-y7-eiM">
+                                        <rect key="frame" x="0.0" y="76" width="375" height="30"/>
+                                        <state key="normal" title="Categories"/>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="n0X-8J-N1A" firstAttribute="top" secondItem="zwi-mO-oA0" secondAttribute="bottom" id="g3O-P1-soo"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WWc-Di-ooe" firstAttribute="leading" secondItem="79Z-I1-TC5" secondAttribute="leading" id="3FN-LK-Rgi"/>
+                            <constraint firstItem="WWc-Di-ooe" firstAttribute="top" secondItem="79Z-I1-TC5" secondAttribute="top" id="Yms-7d-5ur"/>
+                            <constraint firstItem="79Z-I1-TC5" firstAttribute="trailing" secondItem="xnP-Nf-Q1P" secondAttribute="trailing" id="Z5Y-Z7-DP4"/>
+                            <constraint firstItem="WWc-Di-ooe" firstAttribute="trailing" secondItem="79Z-I1-TC5" secondAttribute="trailing" id="dR1-aD-mad"/>
+                            <constraint firstItem="xnP-Nf-Q1P" firstAttribute="top" secondItem="79Z-I1-TC5" secondAttribute="top" id="eqA-VG-h1M"/>
+                            <constraint firstItem="79Z-I1-TC5" firstAttribute="trailing" secondItem="WWc-Di-ooe" secondAttribute="trailing" id="l0j-PD-6PJ"/>
+                            <constraint firstItem="xnP-Nf-Q1P" firstAttribute="leading" secondItem="79Z-I1-TC5" secondAttribute="leading" id="lxR-FB-cow"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="79Z-I1-TC5"/>
                     </view>
                     <toolbarItems/>
@@ -344,6 +339,57 @@
             </objects>
             <point key="canvasLocation" x="3410" y="115"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="XBZ-BW-B2Z">
+            <objects>
+                <viewController id="P9N-k6-XDe" customClass="MenuViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6MO-e1-BIB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhA-Or-C2Y">
+                                <rect key="frame" x="0.0" y="523" width="120" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq1-Tg-P8j">
+                                        <rect key="frame" x="8" y="50" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Categories"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ6-CN-K7X">
+                                        <rect key="frame" x="8" y="12" width="44" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Profile"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xhA-Or-C2Y" firstAttribute="leading" secondItem="GZD-4L-Qah" secondAttribute="leading" constant="-120" id="Ip7-dp-2O3"/>
+                            <constraint firstItem="xhA-Or-C2Y" firstAttribute="bottom" secondItem="GZD-4L-Qah" secondAttribute="bottom" id="UTG-dX-iMq"/>
+                            <constraint firstItem="xhA-Or-C2Y" firstAttribute="top" secondItem="GZD-4L-Qah" secondAttribute="top" id="aOx-DQ-4Yi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GZD-4L-Qah"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="organize" id="Il7-6Q-JXR">
+                            <connections>
+                                <action selector="openMenu:" destination="P9N-k6-XDe" id="Epo-rv-ufs"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="zl6-nW-QPZ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="Ip7-dp-2O3" id="m3t-VR-eVc"/>
+                        <outlet property="menuView" destination="xhA-Or-C2Y" id="S5R-ak-Jbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8j-mo-n3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953" y="841"/>
+        </scene>
         <!--Charity View Controller-->
         <scene sceneID="bNX-XU-voc">
             <objects>
@@ -389,6 +435,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6O0-vP-7d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4271" y="115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rDC-D4-vh8">
+            <objects>
+                <viewController id="yGc-hj-q3k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TfC-39-00m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npD-h6-7sj">
+                                <rect key="frame" x="55" y="158" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="This is the Profile page"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mqN-17-lSb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYN-U7-Ct6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5214" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="htP-no-6yI">

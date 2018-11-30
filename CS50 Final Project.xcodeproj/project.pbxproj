@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200D88C344ADBFD0CA1BD5CA /* Pods_CS50_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CD9531A590278096606347 /* Pods_CS50_Final_ProjectTests.framework */; };
+		2CC2714C21B0CD560078F0B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2714B21B0CD560078F0B3 /* MenuViewController.swift */; };
 		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		0882FF57E7102A021791C7B7 /* Pods-CS50 Final ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2AFC19757CD5F314B789AD38 /* Pods-CS50 Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.release.xcconfig"; sourceTree = "<group>"; };
+		2CC2714B21B0CD560078F0B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "CS50 Final Project/Controllers/MenuViewController.swift"; sourceTree = SOURCE_ROOT; };
 		2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS50 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 			children = (
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
 				C8ABE42321AF58660055E4A3 /* ViewController.swift */,
+				2CC2714B21B0CD560078F0B3 /* MenuViewController.swift */,
 				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
 				DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */,
@@ -459,6 +462,7 @@
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
+				2CC2714C21B0CD560078F0B3 /* MenuViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
 				DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */,
