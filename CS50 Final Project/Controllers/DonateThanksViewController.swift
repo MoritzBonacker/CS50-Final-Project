@@ -1,7 +1,7 @@
 //
 //  DonateThanksViewController.swift
 //  CS50 Final Project
-//aa
+//aassa
 //  Created by Julian Frings on 29.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
