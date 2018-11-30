@@ -6,11 +6,14 @@
 //  Copyright © 2018 Julian Frings. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty"]
     
@@ -34,12 +37,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        menuView.layer.shadowOpacity = 1
     }
     
 
     @IBAction func openMenu(_ sender: Any) {
+        
+        if (menuShowing){
+            leadingConstraint.constant = -120
+        }
+        else{
+            leadingConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+                
+            })
+            
+        }
+        
+        menuShowing = !menuShowing
     }
     
 }
-
