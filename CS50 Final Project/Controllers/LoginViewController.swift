@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
  
     
     override func viewDidAppear(_ animated: Bool){
-        self.performSegue(withIdentifier: "toLogin", sender: self)
+       // self.performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     let loginToMenu = "loginToMenu"

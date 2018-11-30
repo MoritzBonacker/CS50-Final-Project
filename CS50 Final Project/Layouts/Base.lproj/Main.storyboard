@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="obC-DC-QvM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AlE-S6-PQb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3492" y="44"/>
+            <point key="canvasLocation" x="2878" y="925"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="621-vt-Jcs">
@@ -120,6 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedRegistered:" destination="ghG-Uf-ogb" eventType="touchUpInside" id="apl-dl-uVA"/>
+                                    <segue destination="WEp-FB-Js9" kind="presentation" id="SeA-cP-TNL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-y3-3X4">
@@ -142,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6F-Vk-B84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="-573"/>
+            <point key="canvasLocation" x="2486" y="-710"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="E16-WD-ykh">
@@ -192,6 +193,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedLogin:" destination="AlE-S6-PQb" eventType="touchUpInside" id="Gds-uq-O4H"/>
+                                    <segue destination="WEp-FB-Js9" kind="presentation" identifier="loginToMenu" id="eti-BJ-tUU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -219,9 +221,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="KJC-3C-rYc" kind="relationship" relationship="rootViewController" id="u98-Lt-Zps"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-XR-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,13 +339,10 @@
                         <viewLayoutGuide key="safeArea" id="2Pj-jL-oza"/>
                     </view>
                     <navigationItem key="navigationItem" id="btY-PU-QAT"/>
-                    <connections>
-                        <segue destination="AlE-S6-PQb" kind="presentation" identifier="toLogin" id="LxM-KB-CYK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxr-Do-Mzn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="344.80000000000001" y="114.69265367316342"/>
+            <point key="canvasLocation" x="3410" y="115"/>
         </scene>
         <!--Charity View Controller-->
         <scene sceneID="bNX-XU-voc">
@@ -392,11 +388,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6O0-vP-7d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3996" y="812"/>
+            <point key="canvasLocation" x="4271" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="htP-no-6yI">
+            <objects>
+                <navigationController id="WEp-FB-Js9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1jF-e9-NqM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KJC-3C-rYc" kind="presentation" id="wAc-2V-zl8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydj-Ft-loP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486" y="115"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button Donate.jpg" width="784" height="299"/>
         <image name="Donate.png" width="600" height="600"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SeA-cP-TNL"/>
+    </inferredMetricsTieBreakers>
 </document>
