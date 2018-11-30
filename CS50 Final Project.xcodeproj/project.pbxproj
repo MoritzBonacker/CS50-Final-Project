@@ -12,7 +12,7 @@
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
 		C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0765F21ACEB9F005EA977 /* Structs.swift */; };
-		C8ABE42421AF58660055E4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42321AF58660055E4A3 /* ViewController.swift */; };
+		C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */; };
 		C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */; };
 		C8ABE42C21AF588B0055E4A3 /* Environment.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE42721AF588B0055E4A3 /* Environment.png */; };
 		C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE42821AF588B0055E4A3 /* Poverty.png */; };
@@ -29,6 +29,11 @@
 		DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5E113D219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld */; };
 		DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */; };
 		DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */; };
+		DCB9197621B0CF27000F051F /* WWF.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197521B0CF26000F051F /* WWF.png */; };
+		DCB9197821B0CFC2000F051F /* unicef.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197721B0CFC1000F051F /* unicef.png */; };
+		DCB9197A21B0D029000F051F /* stc.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197921B0D029000F051F /* stc.png */; };
+		DCB9197C21B0D0A4000F051F /* greenpeace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197B21B0D0A4000F051F /* greenpeace.jpg */; };
+		DCB9197E21B0D0D5000F051F /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197D21B0D0D5000F051F /* acs.png */; };
 		DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCFBC26521ACF9FD00E44404 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +70,7 @@
 		990067DDA250E6112649DACB /* Pods-CS50 Final ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809A5B521AD151B00CF6B5E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C8A0765F21ACEB9F005EA977 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = Modells/Structs.swift; sourceTree = "<group>"; };
-		C8ABE42321AF58660055E4A3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		C8ABE42721AF588B0055E4A3 /* Environment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Environment.png; sourceTree = "<group>"; };
 		C8ABE42821AF588B0055E4A3 /* Poverty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Poverty.png; sourceTree = "<group>"; };
@@ -81,6 +86,11 @@
 		DC5E113E219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS50_Final_Project.xcdatamodel; sourceTree = "<group>"; };
 		DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5E1143219B9BDD00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCB9197521B0CF26000F051F /* WWF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWF.png; sourceTree = "<group>"; };
+		DCB9197721B0CFC1000F051F /* unicef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicef.png; sourceTree = "<group>"; };
+		DCB9197921B0D029000F051F /* stc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stc.png; sourceTree = "<group>"; };
+		DCB9197B21B0D0A4000F051F /* greenpeace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeace.jpg; sourceTree = "<group>"; };
+		DCB9197D21B0D0D5000F051F /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
 		DCFBC26521ACF9FD00E44404 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
-				C8ABE42321AF58660055E4A3 /* ViewController.swift */,
+				C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */,
 				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
 				DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */,
@@ -168,7 +178,12 @@
 				C8ABE42A21AF588B0055E4A3 /* Animals.png */,
 				C8ABE42921AF588B0055E4A3 /* Education.png */,
 				C8ABE42721AF588B0055E4A3 /* Environment.png */,
+				DCB9197521B0CF26000F051F /* WWF.png */,
+				DCB9197721B0CFC1000F051F /* unicef.png */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
+				DCB9197D21B0D0D5000F051F /* acs.png */,
+				DCB9197B21B0D0A4000F051F /* greenpeace.jpg */,
+				DCB9197921B0D029000F051F /* stc.png */,
 				C8ABE43121AF5B7C0055E4A3 /* Donate.png */,
 				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
 				2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */,
@@ -322,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB9197A21B0D029000F051F /* stc.png in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
@@ -330,8 +346,12 @@
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
+				DCB9197621B0CF27000F051F /* WWF.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
+				DCB9197C21B0D0A4000F051F /* greenpeace.jpg in Resources */,
+				DCB9197E21B0D0D5000F051F /* acs.png in Resources */,
+				DCB9197821B0CFC2000F051F /* unicef.png in Resources */,
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
 			);
@@ -455,7 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8ABE42421AF58660055E4A3 /* ViewController.swift in Sources */,
+				C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */,
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
