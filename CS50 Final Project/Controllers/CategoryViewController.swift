@@ -11,9 +11,12 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var menuView: UIView!
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
+    @IBAction func toProfileButton(_ sender: Any) { performSegue(withIdentifier: "categoryToProfile", sender: self)
+    }
+    
+    //@IBOutlet weak var menuView: UIView!
+    //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty"]
     
@@ -32,17 +35,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 
-    var menuShowing = false
+    //var menuShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        menuView.layer.shadowOpacity = 1
+        //menuView.layer.shadowOpacity = 1
     }
     
 
-    @IBAction func openMenu(_ sender: Any) {
-        
+    /*@IBAction func openMenu(_ sender: Any) {
+    
         if (menuShowing){
             leadingConstraint.constant = -120
         }
@@ -57,6 +60,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         menuShowing = !menuShowing
-    }
+    }*/
     
 }

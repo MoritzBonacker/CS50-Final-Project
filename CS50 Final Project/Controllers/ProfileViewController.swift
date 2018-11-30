@@ -10,7 +10,13 @@ import UIKit
 
 // https://www.youtube.com/watch?v=VFtsSEYDNRU
 class ProfileViewController: UIViewController {
+
     @IBOutlet weak var LogoutButton: UIButton!
+    
+    
+    @IBAction func returnToCategory(_ sender: Any) {
+        performSegue(withIdentifier: "returnToCategory", sender: self)
+    }
     
     
     @IBOutlet weak var Username: UILabel!
