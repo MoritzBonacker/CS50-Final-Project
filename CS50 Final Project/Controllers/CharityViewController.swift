@@ -6,6 +6,7 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //Charity UI
 
+/*
 import UIKit
 import Firebase
 
@@ -54,3 +55,5 @@ class CharityViewController: UIViewController {
     */
 
 }
+
+ */

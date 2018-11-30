@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,12 +29,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 
+    var menuShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    
 
-
+    @IBAction func openMenu(_ sender: Any) {
+    }
+    
 }
 

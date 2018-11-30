@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class MenuViewController: UIViewController {
+
     
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
@@ -35,8 +36,6 @@ class MenuViewController: UIViewController {
                 
             })
             
-            
-    
         }
         
         menuShowing = !menuShowing
