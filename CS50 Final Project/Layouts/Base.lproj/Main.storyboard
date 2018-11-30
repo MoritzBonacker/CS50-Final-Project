@@ -361,7 +361,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charity Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR2-7s-fRX">
                                 <rect key="frame" x="16" y="353" width="359" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="33"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -403,7 +403,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="ZGX-iX-njw"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8lK-cv-Xyb" appends="YES" id="vph-PK-nQl"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="CharityDescription" destination="IPn-Yv-eNi" id="Swm-GS-hfk"/>
@@ -416,6 +420,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6O0-vP-7d6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="T6r-Hs-D96"/>
+                <swipeGestureRecognizer direction="right" id="8lK-cv-Xyb"/>
             </objects>
             <point key="canvasLocation" x="3444" y="804.64767616191909"/>
         </scene>
@@ -561,7 +567,7 @@
         <!--Menu View Controller-->
         <scene sceneID="8bh-JO-K1d">
             <objects>
-                <viewController id="xqr-Rj-Kjx" customClass="MenuViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xqr-Rj-Kjx" customClass="MenuViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="12N-0b-qpn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -616,7 +622,7 @@
         <!--View Controller-->
         <scene sceneID="c3v-5j-S84">
             <objects>
-                <viewController id="AHH-gT-nJ5" customClass="ViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AHH-gT-nJ5" customClass="ViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iyx-FO-Nre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,7 +632,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="category" rowHeight="96" id="nBW-na-5IX" customClass="ViewControllerTableViewCell" customModule="Menu" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="category" rowHeight="96" id="nBW-na-5IX" customClass="ViewControllerTableViewCell" customModule="CS50_Final_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nBW-na-5IX" id="NRu-GG-zMj">

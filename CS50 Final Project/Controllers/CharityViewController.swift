@@ -21,35 +21,76 @@ class CharityViewController: UIViewController {
     @IBOutlet weak var CharityRating: UILabel!
     @IBOutlet weak var CharityLink: UILabel!
     
+    var counter = 0
+    var values: Dictionary<String, AnyObject> = [:]
+    var charities: Array<String> = []
+    var size: Int = 0
+    
     
     override func viewDidLoad() {
+        
+        // Source: https://www.youtube.com/watch?v=mA4GZJjUHLo
+        CharityPic.isUserInteractionEnabled = true
+        
+        let swiftRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
+        swiftRight.direction = UISwipeGestureRecognizer.Direction.right
+        CharityPic.addGestureRecognizer(swiftRight)
+        
+        
+        let swiftLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
+        swiftLeft.direction = UISwipeGestureRecognizer.Direction.left
+        CharityPic.addGestureRecognizer(swiftLeft)
+        
         let chosen_category = "Health"
         let ref = Database.database().reference()
         let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
-            let values = snapshot.value as! [String : AnyObject]
-            let picture = values["American Cancer Society"]!["Picture"]
-            print(values)
-            print(values["American Cancer Society"])
-            print(values["American Cancer Society"]!["Link"])
-            self.CharityName.text = values["American Cancer Society"]!["Name"] as! String
-            self.CharityLink.text = values["American Cancer Society"]!["Link"] as! String
-            self.CharityPic.image = UIImage(named: (picture as! String)) /*
-            self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
-            self.CharityLink.text = values["American Cancer Society"]!["Link"] as! String
-            self.CharitySubcategory.text = chosen_category */
+            self.values = snapshot.value as! [String : AnyObject]
+            self.charities = Array(self.values.keys)
+            self.size = self.charities.count
+            self.CharitySubcategory.text = chosen_category
+            self.nextCharity()
         })
-
-        /*
-        ref.child("Charities/Greenpeace").observeSingleEvent(of: .value) {
-            (snapshot) in
-            let values = snapshot.value as? [String:Any]
-            print(values)
-            print(values!["Link"])
-        }
-        */
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func nextCharity () {
+        let picture = values[charities[self.counter]]!["Picture"]
+        self.CharityName.text = values[charities[self.counter]]!["Name"] as! String
+        self.CharityDescription.text = values[charities[self.counter]]!["Description"] as! String
+        self.CharityPic.image = UIImage(named: (picture as! String))
+        //  self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
+        self.CharityLink.text = values[charities[self.counter]]!["Link"] as! String
+    }
+            
+    @objc func swipeGesture(sender: UIGestureRecognizer) {
+        if let swipeGesture = sender as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizer.Direction.right:
+                print("Swipe right")
+                if counter > 0 {
+                    counter = counter - 1
+                    nextCharity()
+                }
+                else {
+                    return
+                }
+                
+            case UISwipeGestureRecognizer.Direction.left:
+                print("Swipe left")
+                if counter < size {
+                    counter += 1
+                    nextCharity()
+                }
+                else {
+                    return
+                }
+                
+            default:
+                print("Default")
+            }
+        }
     }
     
     
