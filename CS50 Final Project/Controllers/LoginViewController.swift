@@ -1,4 +1,4 @@
-//
+// aa
 //  ViewController.swift
 //  CS50 Final Project
 //
@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
  
     
     override func viewDidAppear(_ animated: Bool){
+       // self.performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     let loginToMenu = "loginToMenu"
@@ -29,8 +30,13 @@ class LoginViewController: UIViewController {
     // Login functionality
     @IBAction func tappedLogin(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!) { user, error in
-            if error == nil {
+            if error != nil || user == nil {
                 print("There was an error")
+                self.createAlert(title: "Error", message: "Login not successful")
+                return
+            }
+            else {
+                print("Successfully logged in")
                 self.performSegue(withIdentifier: "loginToMenu", sender: self)
             }
         }
@@ -50,17 +56,17 @@ class LoginViewController: UIViewController {
         if RegisterPassword.text! != RegisterConfirmation.text! {
             return
         }
-        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!) /* { user, error in
+        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)  { user, error in
             if error == nil && user != nil {
                 print("User created!")
+                self.performSegue(withIdentifier: "registerToMenu", sender: self)
             }
             else {
                 print("Error: \(error?.localizedDescription)")
             }
         }
- */
-        // Auth.auth().signIn(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)
-       // self.performSegue(withIdentifier: "registerToMenu", sender: self);
+ 
+        
     }
    /*
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -75,4 +81,12 @@ class LoginViewController: UIViewController {
         }
         return true
     } */
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
