@@ -23,10 +23,9 @@ class CharityViewController: UIViewController {
     override func viewDidLoad() {
         let ref = Database.database().reference()
         let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: "Health").observe(DataEventType.value, with: { (snapshot) in
-            let name = "Test"
-        }
-        print(query)
-                                                                                                            
+            let values = snapshot.value as? [String:Any]
+            print(values)
+        })
         /*
         ref.child("Charities/Greenpeace").observeSingleEvent(of: .value) {
             (snapshot) in
