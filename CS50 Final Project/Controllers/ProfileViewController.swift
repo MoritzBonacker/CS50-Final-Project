@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 // https://www.youtube.com/watch?v=VFtsSEYDNRU
 class ProfileViewController: UIViewController {
@@ -25,6 +26,9 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         LogoutButton.backgroundColor = UIColor.darkGray
+        let user = Auth.auth().currentUser
+        let name = user?.displayName
+        self.Username.text = name
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
     }
 //
