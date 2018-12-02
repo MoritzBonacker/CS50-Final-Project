@@ -26,12 +26,24 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         LogoutButton.backgroundColor = UIColor.darkGray
-        let user = Auth.auth().currentUser
+        let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
         let name = user?.displayName
         self.Username.text = name
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
     }
-//
+    
+    /*
+    @IBAction func logoutTapped(_ sender: UIButton) {
+        let signout = try? Auth.auth().signOut()
+        if signout == nil {
+            print("error")
+            else do {
+                print("success")
+
+            }
+        }
+    }*/
+    //
 //    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return 10
 //    }
