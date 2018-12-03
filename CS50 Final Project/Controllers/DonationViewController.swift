@@ -7,6 +7,7 @@
 ////
 
 import UIKit
+import Firebase
 
 class DonationViewController: UIViewController {
 
@@ -25,6 +26,28 @@ class DonationViewController: UIViewController {
         DollarButton2.roundButton()
         DollarButton3.roundButton()
     }
+    
+    @IBAction func OneTapped(_ sender: UIButton) {
+        Segue(amount: "1")
+    }
+    
+    @IBAction func FiveTapped(_ sender: UIButton) {
+        Segue(amount: "5")
+    }
+    
+
+    @IBAction func TenTapped(_ sender: UIButton) {
+        Segue(amount: "10")
+    }
+    
+    func Segue (amount: String) {
+        self.performSegue(withIdentifier: amount + "ToThanks", sender: self)
+    }
+    
+    
+    
+    
+    
 }
 
 // Tutorial: https://www.youtube.com/watch?v=xpTGEoUMiOE
