@@ -6,7 +6,7 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //Charity UI
 
-/*
+
 import UIKit
 import Firebase
 
@@ -64,6 +64,15 @@ class CharityViewController: UIViewController {
         //  self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
         self.CharityLink.text = values[charities[self.counter]]!["Link"] as! String
     }
+    
+    // Pushes Data to second view controller
+    // Source: https://www.youtube.com/watch?v=7fbTHFH3tl4
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var CharityViewData = segue.destination as! DonationViewController
+        
+        CharityViewData.Charity_selected = CharityName.text!
+
+    }
             
     @objc func swipeGesture(sender: UIGestureRecognizer) {
         if let swipeGesture = sender as? UISwipeGestureRecognizer {
@@ -109,4 +118,4 @@ class CharityViewController: UIViewController {
 
 }
 
- */
+

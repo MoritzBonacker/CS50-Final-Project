@@ -18,6 +18,9 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var DollarButton2: UIButton!
     @IBOutlet weak var DollarButton3: UIButton!
     
+    // Vari
+    var Charity_selected = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +28,8 @@ class DonationViewController: UIViewController {
         DollarButton1.roundButton()
         DollarButton2.roundButton()
         DollarButton3.roundButton()
+        
+        SelectedCharity.text = Charity_selected
     }
     
     @IBAction func OneTapped(_ sender: UIButton) {
