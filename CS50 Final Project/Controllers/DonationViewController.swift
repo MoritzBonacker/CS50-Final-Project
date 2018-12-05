@@ -68,11 +68,9 @@ class DonationViewController: UIViewController {
 
 extension UIButton {
     func roundButton() {
-        self.backgroundColor = UIColor.darkGray
+        self.backgroundColor = UIColor.black
         // Rounding corners and applying to both corners therefore deviding by 2
-        self.layer.cornerRadius = self.frame.height / 2
-        
-        self.setTitleColor(UIColor.white, for: .normal)
+        self.layer.cornerRadius = self.frame.height / 3
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 4
         self.layer.shadowOpacity = 0.5
