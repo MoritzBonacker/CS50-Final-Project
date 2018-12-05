@@ -12,6 +12,10 @@
 		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
+		C8858E3621B85CF200B8F23D /* light_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3421B85CF100B8F23D /* light_background.png */; };
+		C8858E3721B85CF200B8F23D /* dark_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3521B85CF100B8F23D /* dark_background.png */; };
+		C8858E3921B85D6A00B8F23D /* IconColor.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3821B85D6900B8F23D /* IconColor.png */; };
+		C8858E3B21B85DD700B8F23D /* darkdark_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3A21B85DD600B8F23D /* darkdark_background.png */; };
 		C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0765F21ACEB9F005EA977 /* Structs.swift */; };
 		C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */; };
 		C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */; };
@@ -90,6 +94,10 @@
 		72B7D05B4060DCBE8688B819 /* Pods-CS50 Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.debug.xcconfig"; sourceTree = "<group>"; };
 		990067DDA250E6112649DACB /* Pods-CS50 Final ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809A5B521AD151B00CF6B5E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C8858E3421B85CF100B8F23D /* light_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_background.png; sourceTree = "<group>"; };
+		C8858E3521B85CF100B8F23D /* dark_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_background.png; sourceTree = "<group>"; };
+		C8858E3821B85D6900B8F23D /* IconColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconColor.png; sourceTree = "<group>"; };
+		C8858E3A21B85DD600B8F23D /* darkdark_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkdark_background.png; sourceTree = "<group>"; };
 		C8A0765F21ACEB9F005EA977 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = Modells/Structs.swift; sourceTree = "<group>"; };
 		C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
@@ -229,8 +237,12 @@
 				C8F39DDB21B77E6200CF7631 /* acs.png */,
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
+				C8858E3821B85D6900B8F23D /* IconColor.png */,
 				C8F39DF221B78ACD00CF7631 /* Human Rights.png */,
 				C8F39DF321B78ACD00CF7631 /* Public Policy.png */,
+				C8858E3521B85CF100B8F23D /* dark_background.png */,
+				C8858E3A21B85DD600B8F23D /* darkdark_background.png */,
+				C8858E3421B85CF100B8F23D /* light_background.png */,
 				C8F39DFA21B8105600CF7631 /* RoundedIcon.png */,
 				C8F39DDD21B77E6200CF7631 /* WWF.png */,
 				C8F39DE221B784CC00CF7631 /* 0stars.png */,
@@ -400,10 +412,12 @@
 				C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */,
 				C8F39DEA21B784CD00CF7631 /* 3stars.png in Resources */,
 				C8F39DFB21B8105600CF7631 /* RoundedIcon.png in Resources */,
+				C8858E3921B85D6A00B8F23D /* IconColor.png in Resources */,
 				C8F39DE821B784CD00CF7631 /* 0stars.png in Resources */,
 				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
 				C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */,
+				C8858E3721B85CF200B8F23D /* dark_background.png in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				C8F39DDF21B77E6200CF7631 /* acs.png in Resources */,
 				C8F39DE121B77E6200CF7631 /* WWF.png in Resources */,
@@ -420,6 +434,7 @@
 				C8ABE42C21AF588B0055E4A3 /* Environment.png in Resources */,
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
+				C8858E3621B85CF200B8F23D /* light_background.png in Resources */,
 				2CC2718C21B120740078F0B3 /* user.png in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
@@ -427,6 +442,7 @@
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */,
 				C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */,
+				C8858E3B21B85DD700B8F23D /* darkdark_background.png in Resources */,
 				C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
 			);
