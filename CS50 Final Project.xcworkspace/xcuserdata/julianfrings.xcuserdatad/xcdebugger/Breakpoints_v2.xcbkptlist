@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CS50 Final Project/Controllers/LoginViewController.swift"
+            timestampString = "565681069.8514071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS50_Final_Project.LoginViewController.LoginEmail.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "CS50 Final Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianfrings/Harvard/CS50/Final%20Project/CS50-Final-Project/CS50%20Final%20Project/Controllers/LoginViewController.swift"
+                  timestampString = "565680048.4920779"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS50_Final_Project.LoginViewController.LoginEmail.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "CS50 Final Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianfrings/Harvard/CS50/Final%20Project/CS50-Final-Project/CS50%20Final%20Project/Controllers/LoginViewController.swift"
+                  timestampString = "565680048.495435"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS50_Final_Project.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CS50_Final_Project.LoginViewController"
+                  moduleName = "CS50 Final Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianfrings/Harvard/CS50/Final%20Project/CS50-Final-Project/CS50%20Final%20Project/Controllers/LoginViewController.swift"
+                  timestampString = "565680048.4971451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS50_Final_Project.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CS50_Final_Project.LoginViewController&gt;"
+                  moduleName = "CS50 Final Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianfrings/Harvard/CS50/Final%20Project/CS50-Final-Project/CS50%20Final%20Project/Controllers/LoginViewController.swift"
+                  timestampString = "565680048.4987071"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

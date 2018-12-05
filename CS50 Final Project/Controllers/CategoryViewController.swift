@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Human Rights", "Public Policy"]
     
+    // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (categories.count)
     }

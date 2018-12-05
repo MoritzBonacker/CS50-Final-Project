@@ -10,28 +10,65 @@ import UIKit
 import Firebase
 
 // https://www.youtube.com/watch?v=VFtsSEYDNRU
-class ProfileViewController: UIViewController {
-
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
     @IBOutlet weak var LogoutButton: UIButton!
     
     @IBOutlet weak var Username: UILabel!
     
     var values: Dictionary<String, AnyObject> = [:]
-//
-//    let userID = "userID"
+    var transactions: Array<String> = []
+    
+    //
+    //    let userID = "userID"
     override func viewDidLoad() {
         super.viewDidLoad()
         LogoutButton.backgroundColor = UIColor.darkGray
         let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
         self.Username.text = user?.email
         
+        print(user?.uid)
         let ref = Database.database().reference()
-        ref.child("user").observe(.childAdded, with: { (snapshot) in
+        ref.child("user").child((user?.uid)!).observe(.childAdded, with: { (snapshot) in
             self.values = snapshot.value as! Dictionary<String, AnyObject>
+            self.transactions = Array(self.values.keys)
             print(self.values)
         })
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
+        
+        var TransactedCharities: Array<String> = []
+        
+        print(values)
+        
+        for i in 0...values.count {
+            
+            TransactedCharities[i] = values[transactions[i]]?["Name"] as! String
+        }
+        
+        print(TransactedCharities)
+        
+        //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
     }
+    
+    // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
+    // https://www.youtube.com/watch?v=uBesaTUJZi0
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (values.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "history", for: indexPath) as! ViewControllerTableViewCellHistrory
+        
+        // cell.CharityName = [indexPath.row]
+        //cell.DonationAmount = values[transactions[0]]["Amount"]
+        
+        return (cell)
+    }
+    
+
     
     /*
     @IBAction func logoutTapped(_ sender: UIButton) {
