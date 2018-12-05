@@ -73,7 +73,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         CharityViewData?.chosen_category = categoryToSend
         
     }
+
+
     
+    //var menuShowing = false
+    
+    override func viewDidLoad() {
+        // Do any additional setup after loading the view, typically from a nib.
+        //menuView.layer.shadowOpacity = 1
 }
 
 
