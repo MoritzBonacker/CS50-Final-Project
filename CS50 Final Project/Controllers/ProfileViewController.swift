@@ -27,8 +27,10 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         LogoutButton.backgroundColor = UIColor.darkGray
         let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
-        let name = user?.displayName
-        self.Username.text = name
+        self.Username.text = user?.email
+        
+        let ref = Database.database().reference()
+        /*let query = ref.child("user").queryOrdered(byChild: user?.uid).queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in */
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
     }
     
