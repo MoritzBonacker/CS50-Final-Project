@@ -85,11 +85,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         let user = Auth.auth().currentUser
         let ref = Database.database().reference()
-        ref.child("user").child(user!.uid).observe(.childAdded, with: { (snapshot) in
-            self.values = snapshot.value as! Dictionary<String, AnyObject>
+        ref.child("user").child(user!.uid).observe(DataEventType.value, with: { (snapshot) in
+            self.values = snapshot.value as? Dictionary<String, AnyObject> ?? [:]
             self.charities = Array(self.values.keys)
             let size = self.charities.count
             print(self.values)
+            var names_list = [String] ()
+            var amounts_list = [Int] ()
+            for value in self.values.keys {
+                // print(self.values[value]?["Name"])
+                names_list.append(self.values[value]?["Name"] as! String)
+                // print(self.values[value]?["Amount"])
+                amounts_list.append(self.values[value]?["Amount"] as! Int)
+            }
+            print(names_list)
+            print(amounts_list)
         // Do any additional setup after loading the view, typically from a nib.
         //menuView.layer.shadowOpacity = 1
 
