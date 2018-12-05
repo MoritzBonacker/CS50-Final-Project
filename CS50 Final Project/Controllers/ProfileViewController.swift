@@ -14,13 +14,9 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var LogoutButton: UIButton!
     
-    
-    @IBAction func returnToCategory(_ sender: Any) {
-        performSegue(withIdentifier: "returnToCategory", sender: self)
-    }
-    
-    
     @IBOutlet weak var Username: UILabel!
+    
+    var values: Dictionary<String, AnyObject> = [:]
 //
 //    let userID = "userID"
     override func viewDidLoad() {
@@ -30,7 +26,10 @@ class ProfileViewController: UIViewController {
         self.Username.text = user?.email
         
         let ref = Database.database().reference()
-        /*let query = ref.child("user").queryOrdered(byChild: user?.uid).queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in */
+        ref.child("user").observe(.childAdded, with: { (snapshot) in
+            self.values = snapshot.value as! Dictionary<String, AnyObject>
+            print(self.values)
+        })
 //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
     }
     

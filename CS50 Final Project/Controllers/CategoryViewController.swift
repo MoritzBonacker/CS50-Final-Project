@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 var selected_cell = String()
 
@@ -16,6 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func toProfileButton(_ sender: Any) { performSegue(withIdentifier: "categoryToProfile", sender: self)
     }
+    
+    var values: Dictionary<String, AnyObject> = [:]
     
     //@IBOutlet weak var menuView: UIView!
     //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
@@ -78,7 +81,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //var menuShowing = false
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+            super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //menuView.layer.shadowOpacity = 1
 
