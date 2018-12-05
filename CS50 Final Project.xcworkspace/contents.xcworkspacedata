@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/julianfrings/Harvard/CS50/Final Project/CS50-Final-Project/CS50 Final Project/Controllers/ViewControllerTableViewCellHistrory.swift">
-   </FileRef>
-   <FileRef
       location = "group:CS50 Final Project.xcodeproj">
    </FileRef>
    <FileRef
