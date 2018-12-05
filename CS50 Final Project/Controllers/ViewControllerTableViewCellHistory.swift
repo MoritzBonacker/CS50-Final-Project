@@ -11,7 +11,7 @@ import UIKit
 class ViewControllerTableViewCellHistory: UITableViewCell {
     @IBOutlet weak var CharityName: UILabel!
     
-    @IBOutlet weak var DonationAmount: UILabel!
+    @IBOutlet weak var CharityAmount: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
