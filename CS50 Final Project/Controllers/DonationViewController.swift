@@ -54,7 +54,7 @@ class DonationViewController: UIViewController {
     func InsertDatabase (amount: Int) {
         let user = Auth.auth().currentUser
         let ref = Database.database().reference()
-        let data = ["Name": Charity_selected, "Amount": amount] as [String : Any]
+        let data = ["Name": Charity_selected, "Amount": amount, "Timestamp": ServerValue.timestamp() ] as [String : Any]
         ref.child("user").child(user!.uid).childByAutoId().setValue(data)
     }
     
