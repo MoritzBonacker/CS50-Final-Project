@@ -13,63 +13,79 @@ import Firebase
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+    
+    
     @IBOutlet weak var LogoutButton: UIButton!
     
     @IBOutlet weak var Username: UILabel!
     
     var values: Dictionary<String, AnyObject> = [:]
-    var transactions: Array<String> = []
     
-    //
-    //    let userID = "userID"
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        LogoutButton.backgroundColor = UIColor.darkGray
-        let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
-        self.Username.text = user?.email
+    var names_list = [String] ()
+    var amounts_list = [Int] ()
+    
+    // -> (Array<Any>, Array<Any>)
+    func LoadHistory() {
+            LogoutButton.backgroundColor = UIColor.darkGray
+            let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
+            self.Username.text = user?.email
         
-        print(user?.uid)
-        let ref = Database.database().reference()
-        ref.child("user").child((user?.uid)!).observe(.childAdded, with: { (snapshot) in
-            self.values = snapshot.value as! Dictionary<String, AnyObject>
-            self.transactions = Array(self.values.keys)
-            print(self.values)
-        })
-        
-        var TransactedCharities: Array<String> = []
-        
-        print(values)
-        
-        for i in 0...values.count {
+            let ref = Database.database().reference()
+            ref.child("user").child(user!.uid).observe(DataEventType.value, with: { (snapshot) in
+            self.values = snapshot.value as? Dictionary<String, AnyObject> ?? [:]
+            // print(self.values)
             
-            TransactedCharities[i] = values[transactions[i]]?["Name"] as! String
+            for value in self.values.keys {
+                // print(self.values[value]?["Name"])
+                self.names_list.append(self.values[value]?["Name"] as! String)
+                // print(self.values[value]?["Amount"])
+                self.amounts_list.append(self.values[value]?["Amount"] as! Int)
+                
+                
+           // return (names_list, amounts_list)
         }
-        
-        print(TransactedCharities)
+                print(self.names_list)
         
         //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: userID)
+        })
     }
-    
-    // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
-    // https://www.youtube.com/watch?v=uBesaTUJZi0
-    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        
         return (values.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "history", for: indexPath) as! ViewControllerTableViewCellHistrory
+        LoadHistory()
         
-        // cell.CharityName = [indexPath.row]
-        //cell.DonationAmount = values[transactions[0]]["Amount"]
+        print(names_list)
+        print(amounts_list)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "history", for: indexPath) as! ViewControllerTableViewCellHistory
+        
+        cell.CharityName.text = names_list[indexPath.row]
+        cell.DonationAmount.text = String(amounts_list[indexPath.row])
         
         return (cell)
     }
     
 
     
+    //
+    //    let userID = "userID"
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+    // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
+    // https://www.youtube.com/watch?v=uBesaTUJZi0
+    
+
+}
+
+
+
     /*
     @IBAction func logoutTapped(_ sender: UIButton) {
         let signout = try? Auth.auth().signOut()
@@ -96,7 +112,6 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
     
 
-    }
 
         
         // Do any additional setup after loading the view.
@@ -114,3 +129,4 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     */
 
 
+}

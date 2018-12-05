@@ -1,17 +1,17 @@
 //
-//  ViewControllerTableViewCellHistrory.swift
-//  
+//  ViewControllerTableViewCellHistory.swift
+//  CS50 Final Project
 //
-//  Created by Julian Frings on 04.12.18.
+//  Created by Julian Frings on 05.12.18.
+//  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerTableViewCellHistrory: UITableViewCell {
-
-    @IBOutlet weak var DonationAmount: UILabel!
+class ViewControllerTableViewCellHistory: UITableViewCell {
     @IBOutlet weak var CharityName: UILabel!
     
+    @IBOutlet weak var DonationAmount: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
