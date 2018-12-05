@@ -19,7 +19,7 @@ class CharityViewController: UIViewController {
     @IBOutlet weak var CharitySubcategory: UILabel!
     @IBOutlet weak var DonateButton: UIButton!
     @IBOutlet weak var CharityDescription: UILabel!
-    @IBOutlet weak var CharityRating: UILabel!
+    @IBOutlet weak var CharityRating: UIImageView!
     
     // Source: https://www.youtube.com/watch?v=Epb_ZZBFZIs
     @IBAction func CharityLink(_ sender: Any) {
@@ -41,6 +41,7 @@ class CharityViewController: UIViewController {
     var chosen_category = String()
     
     override func viewDidLoad() {
+        let ref = Database.database().reference()
         super.viewDidLoad()
         
         // Source: https://www.youtube.com/watch?v=mA4GZJjUHLo
@@ -57,7 +58,6 @@ class CharityViewController: UIViewController {
 
         
         //let chosen_category = "Health"
-        let ref = Database.database().reference()
         let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
             self.values = snapshot.value as! [String : AnyObject]
             self.charities = Array(self.values.keys)
@@ -70,11 +70,13 @@ class CharityViewController: UIViewController {
     }
     
     func nextCharity () {
+        // let picture = "acs.png"
         let picture = values[charities[self.counter]]!["Picture"]
         self.CharityName.text = values[charities[self.counter]]!["Name"] as! String
         self.CharityDescription.text = values[charities[self.counter]]!["Description"] as! String
         self.CharityPic.image = UIImage(named: (picture as! String))
-        //  self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
+        print(values[charities[self.counter]]!["Rating"] as! Int)
+        self.CharityRating.image = UIImage(named: ((String(values[charities[self.counter]]!["Rating"] as! Int)) + "stars.png"))
     }
     
     // Pushes Data to second view controller
@@ -101,7 +103,7 @@ class CharityViewController: UIViewController {
                 
             case UISwipeGestureRecognizer.Direction.left:
                 print("Swipe left")
-                if counter < size {
+                if counter < size - 1 {
                     counter += 1
                     nextCharity()
                 }

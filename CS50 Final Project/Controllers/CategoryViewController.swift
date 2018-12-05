@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     //@IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
-    let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Bla", "Test", "What", "Hey", "More"]
+    let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Human Rights", "Public Policy"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (categories.count)
