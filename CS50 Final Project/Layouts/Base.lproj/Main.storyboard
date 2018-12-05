@@ -550,15 +550,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IF1-15-WFt">
-                                <rect key="frame" x="-25" y="64" width="516" height="559"/>
+                                <rect key="frame" x="-25" y="20" width="516" height="603"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="516" id="xha-Jn-pii"/>
                                 </constraints>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-LE-rcw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="csI-lC-QxM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you for donating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql7-CF-pHW">
@@ -809,7 +809,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calm_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-x2-gkA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="231"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="231"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="231" id="vbW-pS-1jE"/>
                                 </constraints>
@@ -842,7 +842,7 @@
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="history" id="rgE-Bb-Ic2" customClass="ViewControllerTableViewCellHistrory" customModule="CS50_Final_Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="history" id="rgE-Bb-Ic2" customClass="ViewControllerTableViewCellHistory" customModule="CS50_Final_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rgE-Bb-Ic2" id="E04-3g-cHH">
@@ -867,7 +867,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="CharityName" destination="RQy-7Z-yjC" id="wZp-FV-pff"/>
+                                            <outlet property="CharityAmount" destination="B5U-Z2-LMR" id="IRQ-pN-Xfd"/>
+                                            <outlet property="CharityName" destination="RQy-7Z-yjC" id="MQD-g4-eEF"/>
                                             <outlet property="DonationAmount" destination="B5U-Z2-LMR" id="s3p-qF-hcD"/>
                                         </connections>
                                     </tableViewCell>
@@ -934,7 +935,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n3U-l8-Ctn"/>
-        <segue reference="pha-yY-UsG"/>
+        <segue reference="aAp-LE-Tt9"/>
         <segue reference="H4c-Fi-hrl"/>
     </inferredMetricsTieBreakers>
 </document>

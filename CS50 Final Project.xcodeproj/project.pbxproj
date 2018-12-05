@@ -34,6 +34,7 @@
 		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
 		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AE625C21B7135D000A224E /* DonateBackground.png */; };
+		C8E92AF321B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */; };
 		C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDA21B77E6100CF7631 /* unicef.jpg */; };
 		C8F39DDF21B77E6200CF7631 /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDB21B77E6200CF7631 /* acs.png */; };
 		C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDC21B77E6200CF7631 /* greenpeace.png */; };
@@ -46,7 +47,6 @@
 		C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DE721B784CD00CF7631 /* 5stars.png */; };
 		C8F39DF421B78ACD00CF7631 /* Human Rights.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DF221B78ACD00CF7631 /* Human Rights.png */; };
 		C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DF321B78ACD00CF7631 /* Public Policy.png */; };
-		C8F39DF921B7914C00CF7631 /* ViewControllerTableViewCellHistrory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F39DF821B7914C00CF7631 /* ViewControllerTableViewCellHistrory.swift */; };
 		C8F39DFB21B8105600CF7631 /* RoundedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DFA21B8105600CF7631 /* RoundedIcon.png */; };
 		C8F39DFD21B810F100CF7631 /* IconWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DFC21B810F000CF7631 /* IconWhite.png */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
@@ -116,6 +116,7 @@
 		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
 		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C8AE625C21B7135D000A224E /* DonateBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonateBackground.png; sourceTree = "<group>"; };
+		C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCellHistory.swift; sourceTree = "<group>"; };
 		C8F39DDA21B77E6100CF7631 /* unicef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unicef.jpg; sourceTree = "<group>"; };
 		C8F39DDB21B77E6200CF7631 /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
 		C8F39DDC21B77E6200CF7631 /* greenpeace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpeace.png; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 		C8F39DE721B784CD00CF7631 /* 5stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5stars.png; sourceTree = "<group>"; };
 		C8F39DF221B78ACD00CF7631 /* Human Rights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Rights.png"; sourceTree = "<group>"; };
 		C8F39DF321B78ACD00CF7631 /* Public Policy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Public Policy.png"; sourceTree = "<group>"; };
-		C8F39DF821B7914C00CF7631 /* ViewControllerTableViewCellHistrory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerTableViewCellHistrory.swift; path = "/Users/moritzbonacker/Documents/CS50-Final-Project/CS50 Final Project/Controllers/ViewControllerTableViewCellHistrory.swift"; sourceTree = "<absolute>"; };
 		C8F39DFA21B8105600CF7631 /* RoundedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundedIcon.png; sourceTree = "<group>"; };
 		C8F39DFC21B810F000CF7631 /* IconWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconWhite.png; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -212,11 +212,11 @@
 		DC415E4321ACE2C7008FC5ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C8F39DF821B7914C00CF7631 /* ViewControllerTableViewCellHistrory.swift */,
 				C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */,
 				C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */,
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
 				C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */,
+				C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */,
 				C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */,
 				C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */,
 				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
@@ -567,7 +567,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8ABE43621B0CBF30055E4A3 /* DonationViewController.swift in Sources */,
-				C8F39DF921B7914C00CF7631 /* ViewControllerTableViewCellHistrory.swift in Sources */,
 				C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */,
 				C8ABE43A21B0E5FC0055E4A3 /* DonateThanksViewController.swift in Sources */,
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
@@ -579,6 +578,7 @@
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
 				DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */,
 				C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */,
+				C8E92AF321B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
