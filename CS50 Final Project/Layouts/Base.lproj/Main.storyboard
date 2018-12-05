@@ -308,73 +308,112 @@
             <objects>
                 <viewController storyboardIdentifier="CharityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ucc-tA-uEP" customClass="CharityViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAI-Zk-oZ6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65T-5t-JIu">
-                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charity Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR2-7s-fRX">
-                                <rect key="frame" x="16" y="353" width="359" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfQ-wj-DDM">
-                                <rect key="frame" x="297" y="585" width="62" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Donate.png"/>
-                                <connections>
-                                    <segue destination="eTc-0P-hYb" kind="show" identifier="donation" id="kyL-yl-5Ae"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subcategory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-l5-Rje">
-                                <rect key="frame" x="16" y="403" width="113" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsE-ei-XVt">
-                                <rect key="frame" x="16" y="534" width="321" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GE-d7-64l">
-                                <rect key="frame" x="249" y="406" width="88" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-Yv-eNi">
-                                <rect key="frame" x="16" y="464" width="88" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-4T-FI5">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-cw-LW5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="956"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jox-l4-DYa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65T-5t-JIu">
+                                                <rect key="frame" x="0.0" y="-49" width="375" height="488"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charity Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR2-7s-fRX">
+                                                <rect key="frame" x="8" y="397" width="359" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfQ-wj-DDM">
+                                                <rect key="frame" x="313" y="510" width="62" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Donate.png"/>
+                                                <connections>
+                                                    <segue destination="eTc-0P-hYb" kind="show" identifier="donation" id="kyL-yl-5Ae"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-Yv-eNi">
+                                                <rect key="frame" x="8" y="683" width="359" height="209"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subcategory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-l5-Rje">
+                                                <rect key="frame" x="8" y="462" width="290" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GE-d7-64l">
+                                                <rect key="frame" x="279" y="632" width="88" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-wV-Ay8">
+                                                <rect key="frame" x="8" y="510" width="62" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                <state key="normal" title="Website"/>
+                                                <connections>
+                                                    <action selector="CharityLink:" destination="Ucc-tA-uEP" eventType="touchUpInside" id="D4X-EL-hGp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="gWc-Ki-DCg"/>
+                                            <constraint firstAttribute="height" constant="1000" id="jAg-sN-73c"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="nR2-nY-Z7Z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Jox-l4-DYa" secondAttribute="bottom" id="HS1-ha-1wg"/>
+                                    <constraint firstItem="Jox-l4-DYa" firstAttribute="top" secondItem="ODK-cw-LW5" secondAttribute="top" id="Oxg-ao-BT7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jox-l4-DYa" secondAttribute="trailing" id="byZ-Uq-jUh"/>
+                                    <constraint firstItem="Jox-l4-DYa" firstAttribute="leading" secondItem="ODK-cw-LW5" secondAttribute="leading" id="c1W-ai-6aD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jox-l4-DYa" secondAttribute="trailing" id="fN3-nY-Kkw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jox-l4-DYa" secondAttribute="bottom" id="pWu-cR-PTV"/>
+                                    <constraint firstItem="Jox-l4-DYa" firstAttribute="top" secondItem="ODK-cw-LW5" secondAttribute="top" id="z3h-1a-4MI"/>
+                                    <constraint firstItem="Jox-l4-DYa" firstAttribute="leading" secondItem="ODK-cw-LW5" secondAttribute="leading" id="zLZ-sm-lZN"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-4T-FI5">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="Kip-Ll-ujf">
                                         <barButtonItem key="leftBarButtonItem" systemItem="organize" id="QOU-rz-l5h"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-fg-4PU">
-                                <rect key="frame" x="0.0" y="64" width="120" height="281"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="bottom" secondItem="ZGX-iX-njw" secondAttribute="bottom" id="5Uh-Vz-qih"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="leading" secondItem="ZGX-iX-njw" secondAttribute="leading" id="5oN-GP-Yuf"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="trailing" secondItem="ZGX-iX-njw" secondAttribute="trailing" id="7vu-gN-rgP"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="top" secondItem="Bse-4T-FI5" secondAttribute="bottom" id="8Gx-aE-4ec"/>
+                            <constraint firstAttribute="bottom" secondItem="ODK-cw-LW5" secondAttribute="bottom" id="KTJ-eP-whK"/>
+                            <constraint firstItem="Jox-l4-DYa" firstAttribute="width" secondItem="cAI-Zk-oZ6" secondAttribute="width" id="L8j-1x-jWP"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="leading" secondItem="ZGX-iX-njw" secondAttribute="leading" id="Tnx-aD-jv1"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="top" secondItem="Bse-4T-FI5" secondAttribute="bottom" id="YRl-sX-fKb"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="top" secondItem="cAI-Zk-oZ6" secondAttribute="top" id="cR9-HZ-PyM"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="trailing" secondItem="ZGX-iX-njw" secondAttribute="trailing" id="gev-Jk-MkU"/>
+                            <constraint firstItem="Jox-l4-DYa" firstAttribute="width" secondItem="cAI-Zk-oZ6" secondAttribute="width" id="hg0-Af-2w7"/>
+                            <constraint firstItem="ZGX-iX-njw" firstAttribute="bottom" secondItem="ODK-cw-LW5" secondAttribute="bottom" id="m5f-Bv-50u"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="trailing" secondItem="ZGX-iX-njw" secondAttribute="trailing" id="qZh-J0-EIz"/>
+                            <constraint firstItem="ODK-cw-LW5" firstAttribute="leading" secondItem="ZGX-iX-njw" secondAttribute="leading" id="seO-Rm-VAm"/>
+                            <constraint firstItem="Jox-l4-DYa" firstAttribute="width" secondItem="cAI-Zk-oZ6" secondAttribute="width" id="ylO-hw-ymt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGX-iX-njw"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="8lK-cv-Xyb" appends="YES" id="vph-PK-nQl"/>
@@ -382,9 +421,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="CharityDescription" destination="IPn-Yv-eNi" id="Swm-GS-hfk"/>
-                        <outlet property="CharityLink" destination="QsE-ei-XVt" id="HCM-jr-1ip"/>
                         <outlet property="CharityName" destination="RR2-7s-fRX" id="cAk-e4-yMh"/>
                         <outlet property="CharityPic" destination="65T-5t-JIu" id="Fc3-MG-Syz"/>
                         <outlet property="CharityRating" destination="3GE-d7-64l" id="SHa-o8-5lG"/>
@@ -396,7 +435,7 @@
                 <swipeGestureRecognizer direction="right" id="T6r-Hs-D96"/>
                 <swipeGestureRecognizer direction="right" id="8lK-cv-Xyb"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="1295"/>
+            <point key="canvasLocation" x="2024.8" y="1294.4527736131936"/>
         </scene>
         <!--Donation View Controller-->
         <scene sceneID="E2B-JM-7uM">
@@ -423,7 +462,7 @@
                                 <state key="normal" title="5 Dollars"/>
                                 <connections>
                                     <action selector="FiveTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="UTg-Ie-uEW"/>
-                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="FiveToThanks" id="lDz-C5-CWu"/>
+                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="5ToThanks" id="lDz-C5-CWu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-7c-zWf">
@@ -434,7 +473,7 @@
                                 <state key="normal" title="1 Dollar"/>
                                 <connections>
                                     <action selector="OneTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="1lo-T9-9xA"/>
-                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="OneToThanks" id="dN1-LZ-IeP"/>
+                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="1ToThanks" id="dN1-LZ-IeP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmZ-FB-z3z">
@@ -445,7 +484,7 @@
                                 <state key="normal" title="10 Dollars"/>
                                 <connections>
                                     <action selector="TenTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="mDR-HQ-Fes"/>
-                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="TenToThanks" id="n3U-l8-Ctn"/>
+                                    <segue destination="2Cg-IK-sLi" kind="show" identifier="10ToThanks" id="n3U-l8-Ctn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6E-zy-BMI">
@@ -485,7 +524,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htW-9D-rCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2981.5999999999999" y="1294.9025487256372"/>
+            <point key="canvasLocation" x="2777" y="1145"/>
         </scene>
         <!--Donate Thanks View Controller-->
         <scene sceneID="Jnq-KH-eqa">
