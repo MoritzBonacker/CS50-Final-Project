@@ -41,6 +41,7 @@ class CharityViewController: UIViewController {
     var chosen_category = String()
     
     override func viewDidLoad() {
+        let ref = Database.database().reference()
         super.viewDidLoad()
         
         // Source: https://www.youtube.com/watch?v=mA4GZJjUHLo
@@ -57,7 +58,6 @@ class CharityViewController: UIViewController {
 
         
         //let chosen_category = "Health"
-        let ref = Database.database().reference()
         let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
             self.values = snapshot.value as! [String : AnyObject]
             self.charities = Array(self.values.keys)
@@ -70,6 +70,7 @@ class CharityViewController: UIViewController {
     }
     
     func nextCharity () {
+        // let picture = "acs.png"
         let picture = values[charities[self.counter]]!["Picture"]
         self.CharityName.text = values[charities[self.counter]]!["Name"] as! String
         self.CharityDescription.text = values[charities[self.counter]]!["Description"] as! String
@@ -101,7 +102,7 @@ class CharityViewController: UIViewController {
                 
             case UISwipeGestureRecognizer.Direction.left:
                 print("Swipe left")
-                if counter < size {
+                if counter < size - 1 {
                     counter += 1
                     nextCharity()
                 }

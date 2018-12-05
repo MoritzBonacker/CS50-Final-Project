@@ -30,6 +30,10 @@
 		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
 		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AE625C21B7135D000A224E /* DonateBackground.png */; };
+		C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDA21B77E6100CF7631 /* unicef.jpg */; };
+		C8F39DDF21B77E6200CF7631 /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDB21B77E6200CF7631 /* acs.png */; };
+		C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDC21B77E6200CF7631 /* greenpeace.png */; };
+		C8F39DE121B77E6200CF7631 /* WWF.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDD21B77E6200CF7631 /* WWF.png */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
@@ -38,11 +42,7 @@
 		DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5E113D219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld */; };
 		DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */; };
 		DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E1142219B9BDD00BDE9B9 /* LaunchScreen.storyboard */; };
-		DCB9197621B0CF27000F051F /* WWF.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197521B0CF26000F051F /* WWF.png */; };
-		DCB9197821B0CFC2000F051F /* unicef.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197721B0CFC1000F051F /* unicef.png */; };
 		DCB9197A21B0D029000F051F /* stc.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197921B0D029000F051F /* stc.png */; };
-		DCB9197C21B0D0A4000F051F /* greenpeace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197B21B0D0A4000F051F /* greenpeace.jpg */; };
-		DCB9197E21B0D0D5000F051F /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB9197D21B0D0D5000F051F /* acs.png */; };
 		DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCFBC26521ACF9FD00E44404 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +97,10 @@
 		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
 		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C8AE625C21B7135D000A224E /* DonateBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonateBackground.png; sourceTree = "<group>"; };
+		C8F39DDA21B77E6100CF7631 /* unicef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unicef.jpg; sourceTree = "<group>"; };
+		C8F39DDB21B77E6200CF7631 /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
+		C8F39DDC21B77E6200CF7631 /* greenpeace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenpeace.png; sourceTree = "<group>"; };
+		C8F39DDD21B77E6200CF7631 /* WWF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWF.png; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,11 +108,7 @@
 		DC5E113E219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS50_Final_Project.xcdatamodel; sourceTree = "<group>"; };
 		DC5E1140219B9BDD00BDE9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5E1143219B9BDD00BDE9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DCB9197521B0CF26000F051F /* WWF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWF.png; sourceTree = "<group>"; };
-		DCB9197721B0CFC1000F051F /* unicef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicef.png; sourceTree = "<group>"; };
 		DCB9197921B0D029000F051F /* stc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stc.png; sourceTree = "<group>"; };
-		DCB9197B21B0D0A4000F051F /* greenpeace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenpeace.jpg; sourceTree = "<group>"; };
-		DCB9197D21B0D0D5000F051F /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
 		DCFBC26521ACF9FD00E44404 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,13 +203,13 @@
 				C8ABE42921AF588B0055E4A3 /* Education.png */,
 				C8ABE42721AF588B0055E4A3 /* Environment.png */,
 				C8AE625C21B7135D000A224E /* DonateBackground.png */,
-				DCB9197521B0CF26000F051F /* WWF.png */,
-				DCB9197721B0CFC1000F051F /* unicef.png */,
+				C8F39DDB21B77E6200CF7631 /* acs.png */,
+				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
+				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
+				C8F39DDD21B77E6200CF7631 /* WWF.png */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
 				C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */,
 				2CC2718B21B120730078F0B3 /* user.png */,
-				DCB9197D21B0D0D5000F051F /* acs.png */,
-				DCB9197B21B0D0A4000F051F /* greenpeace.jpg */,
 				DCB9197921B0D029000F051F /* stc.png */,
 				C8ABE43121AF5B7C0055E4A3 /* Donate.png */,
 				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
@@ -367,7 +367,10 @@
 				C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */,
 				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
+				C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
+				C8F39DDF21B77E6200CF7631 /* acs.png in Resources */,
+				C8F39DE121B77E6200CF7631 /* WWF.png in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
 				C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
@@ -377,14 +380,11 @@
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
 				2CC2718C21B120740078F0B3 /* user.png in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
-				DCB9197621B0CF27000F051F /* WWF.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
-				DCB9197C21B0D0A4000F051F /* greenpeace.jpg in Resources */,
-				DCB9197E21B0D0D5000F051F /* acs.png in Resources */,
-				DCB9197821B0CFC2000F051F /* unicef.png in Resources */,
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */,
+				C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

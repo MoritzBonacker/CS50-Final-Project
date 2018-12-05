@@ -855,10 +855,6 @@
                                 <state key="normal" title="Return to Categorires">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="returnToCategory:" destination="trU-wr-7q7" eventType="touchUpInside" id="nDJ-Cg-suX"/>
-                                    <segue destination="KJC-3C-rYc" kind="presentation" identifier=" returnToCategory" id="aAp-LE-Tt9"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -900,7 +896,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n3U-l8-Ctn"/>
-        <segue reference="pha-yY-UsG"/>
         <segue reference="H4c-Fi-hrl"/>
     </inferredMetricsTieBreakers>
 </document>
