@@ -11,8 +11,6 @@ import Firebase
 
 class DonationViewController: UIViewController {
     
-var ref = Database.database().reference()
-    
     @IBOutlet weak var SelectedCharity: UILabel!
     @IBOutlet weak var DollarButton1: UIButton!
     @IBOutlet weak var DollarButton2: UIButton!
@@ -34,22 +32,30 @@ var ref = Database.database().reference()
     }
     
     @IBAction func OneTapped(_ sender: UIButton) {
-        var user = Auth.auth().currentUser
-        self.ref.child("users").child((user?.uid)!).setValue(["Amount": 1])
+        InsertDatabase(amount: 1)
         Segue(amount: "One")
     }
     
     @IBAction func FiveTapped(_ sender: UIButton) {
+        InsertDatabase(amount: 1)
         Segue(amount: "Five")
     }
     
 
     @IBAction func TenTapped(_ sender: UIButton) {
+        InsertDatabase(amount: 1)
         Segue(amount: "Ten")
     }
     
     func Segue (amount: String) {
         self.performSegue(withIdentifier: amount + "ToThanks", sender: self)
+    }
+    
+    func InsertDatabase (amount: Int) {
+        let user = Auth.auth().currentUser
+        let ref = Database.database().reference()
+        let data = ["Name": Charity_selected, "Amount": amount] as [String : Any]
+        ref.child("user").child(user!.uid).childByAutoId().setValue(data)
     }
     
     
