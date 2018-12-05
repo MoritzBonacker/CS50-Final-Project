@@ -40,6 +40,8 @@
 		C8F39DEB21B784CD00CF7631 /* 1stars.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DE521B784CD00CF7631 /* 1stars.png */; };
 		C8F39DEC21B784CD00CF7631 /* 4stars.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DE621B784CD00CF7631 /* 4stars.png */; };
 		C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DE721B784CD00CF7631 /* 5stars.png */; };
+		C8F39DF421B78ACD00CF7631 /* Human Rights.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DF221B78ACD00CF7631 /* Human Rights.png */; };
+		C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DF321B78ACD00CF7631 /* Public Policy.png */; };
 		CEE9FBBB8CA3EB64524FF6D5 /* Pods_CS50_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF5AD720F0C965D1D42FA9 /* Pods_CS50_Final_ProjectUITests.framework */; };
 		DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC57AD3F21ACE48C0096EA24 /* Info.plist */; };
 		DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */; };
@@ -113,6 +115,8 @@
 		C8F39DE521B784CD00CF7631 /* 1stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1stars.png; sourceTree = "<group>"; };
 		C8F39DE621B784CD00CF7631 /* 4stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4stars.png; sourceTree = "<group>"; };
 		C8F39DE721B784CD00CF7631 /* 5stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5stars.png; sourceTree = "<group>"; };
+		C8F39DF221B78ACD00CF7631 /* Human Rights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Rights.png"; sourceTree = "<group>"; };
+		C8F39DF321B78ACD00CF7631 /* Public Policy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Public Policy.png"; sourceTree = "<group>"; };
 		DC57AD3F21ACE48C0096EA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				C8F39DDB21B77E6200CF7631 /* acs.png */,
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
+				C8F39DF221B78ACD00CF7631 /* Human Rights.png */,
+				C8F39DF321B78ACD00CF7631 /* Public Policy.png */,
 				C8F39DDD21B77E6200CF7631 /* WWF.png */,
 				C8F39DE221B784CC00CF7631 /* 0stars.png */,
 				C8F39DE521B784CD00CF7631 /* 1stars.png */,
@@ -396,6 +402,7 @@
 				C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */,
 				C8F39DEB21B784CD00CF7631 /* 1stars.png in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
+				C8F39DF421B78ACD00CF7631 /* Human Rights.png in Resources */,
 				C8F39DEC21B784CD00CF7631 /* 4stars.png in Resources */,
 				DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */,
 				C8F39DE921B784CD00CF7631 /* 2stars.png in Resources */,
@@ -408,6 +415,7 @@
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */,
+				C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */,
 				C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
 			);
