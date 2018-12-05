@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
                 self.amounts_list.append(self.values[value]?["Amount"] as! Int)
                 
                 
-           // return (names_list, amounts_list)
+           /// return (names_list, amounts_list)
         }
                 print(self.names_list)
         
