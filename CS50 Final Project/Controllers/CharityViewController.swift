@@ -20,7 +20,18 @@ class CharityViewController: UIViewController {
     @IBOutlet weak var DonateButton: UIButton!
     @IBOutlet weak var CharityDescription: UILabel!
     @IBOutlet weak var CharityRating: UILabel!
-    @IBOutlet weak var CharityLink: UILabel!
+    
+    // Source: https://www.youtube.com/watch?v=Epb_ZZBFZIs
+    @IBAction func CharityLink(_ sender: Any) {
+        UIApplication.shared.open(URL (string:values[charities[self.counter]]!["Link"] as! String)! as URL, options: [:], completionHandler: nil)
+        
+    }
+    
+    // if let url = NSURL(string: "www.google.com"){
+        //    UIApplication.sharedApplication
+        //}
+    
+    
     
     var counter = 0
     var values: Dictionary<String, AnyObject> = [:]
@@ -43,9 +54,7 @@ class CharityViewController: UIViewController {
         let swiftLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
         swiftLeft.direction = UISwipeGestureRecognizer.Direction.left
         CharityPic.addGestureRecognizer(swiftLeft)
-        
-        print("UNDER THIS FUCKER")
-        print(chosen_category)
+
         
         //let chosen_category = "Health"
         let ref = Database.database().reference()
@@ -66,7 +75,6 @@ class CharityViewController: UIViewController {
         self.CharityDescription.text = values[charities[self.counter]]!["Description"] as! String
         self.CharityPic.image = UIImage(named: (picture as! String))
         //  self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
-        self.CharityLink.text = values[charities[self.counter]]!["Link"] as! String
     }
     
     // Pushes Data to second view controller
