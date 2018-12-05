@@ -10,18 +10,13 @@ import UIKit
 
 class DonateThanksViewController: UIViewController {
     
+    @IBOutlet weak var NavButton: UIButton!
     
-    @IBAction func returnToCategories(_ sender: Any) {
-        performSegue(withIdentifier: "returnToCategories", sender: self)
-    }
-    
-    
-    @IBOutlet weak var ReturnButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        ReturnButton.backgroundColor = UIColor.white
+        
+        NavButton.backgroundColor = UIColor.white
     }
     
 
