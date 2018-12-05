@@ -954,8 +954,9 @@
         <image name="User.png" width="1600" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="lpa-Wr-fTG"/>
         <segue reference="n3U-l8-Ctn"/>
         <segue reference="aAp-LE-Tt9"/>
-        <segue reference="H4c-Fi-hrl"/>
+        <segue reference="XB6-eV-IS1"/>
     </inferredMetricsTieBreakers>
 </document>
