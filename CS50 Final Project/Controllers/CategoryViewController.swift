@@ -44,10 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var categoryToSend = String()
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print("bla")
-        
-        
+
         categoryToSend = categories[indexPath.row]
         self.performSegue(withIdentifier: "ToCharityView", sender: nil)
         
@@ -68,13 +65,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
 
-
+    // Source: https://www.youtube.com/watch?v=czWu1RXnnUE and https://www.youtube.com/watch?v=pG3n-dFoj0g
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let CharityViewData = segue.destination as! CharityViewController
         
         CharityViewData.chosen_category = categoryToSend
-        print("BELOW")
-        print(categoryToSend)
         
     }
 
