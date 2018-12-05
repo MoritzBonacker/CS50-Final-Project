@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="trU-wr-7q7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ucc-tA-uEP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6F-Vk-B84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582" y="-697"/>
+            <point key="canvasLocation" x="1678" y="-366"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="E16-WD-ykh">
@@ -148,7 +148,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPb-tc-9CJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oDz-Vq-uVL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="226" y="115"/>
+            <point key="canvasLocation" x="286" y="423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ic8-U6-BZz">
@@ -166,7 +166,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-XR-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582" y="115"/>
+            <point key="canvasLocation" x="1679" y="424"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="44V-Ey-EzM">
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jId-gq-dyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="990"/>
+            <point key="canvasLocation" x="1234" y="2469"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X8R-eK-BSm">
@@ -298,7 +298,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxr-Do-Mzn" sceneMemberID="firstResponder"/>
                 <exit id="PCC-y4-t3f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="114.69265367316342"/>
+            <point key="canvasLocation" x="2982" y="425"/>
         </scene>
         <!--Charity View Controller-->
         <scene sceneID="bNX-XU-voc">
@@ -324,7 +324,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Donate.png"/>
                                 <connections>
-                                    <segue destination="eTc-0P-hYb" kind="show" id="kyL-yl-5Ae"/>
+                                    <segue destination="eTc-0P-hYb" kind="show" identifier="donation" id="kyL-yl-5Ae"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subcategory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-l5-Rje">
@@ -337,21 +337,21 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsE-ei-XVt">
                                 <rect key="frame" x="16" y="534" width="321" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GE-d7-64l">
                                 <rect key="frame" x="249" y="406" width="88" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-Yv-eNi">
                                 <rect key="frame" x="16" y="464" width="88" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -393,7 +393,7 @@
                 <swipeGestureRecognizer direction="right" id="T6r-Hs-D96"/>
                 <swipeGestureRecognizer direction="right" id="8lK-cv-Xyb"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="840.62968515742136"/>
+            <point key="canvasLocation" x="2026" y="1295"/>
         </scene>
         <!--Donation View Controller-->
         <scene sceneID="E2B-JM-7uM">
@@ -403,16 +403,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected Charity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huh-zI-BjK">
-                                <rect key="frame" x="89" y="62" width="202" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DonateBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="r4M-zL-bx0">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selected Charity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huh-zI-BjK">
+                                <rect key="frame" x="16" y="174" width="343" height="34"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlR-L3-pbM">
-                                <rect key="frame" x="37" y="370" width="301" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlR-L3-pbM">
+                                <rect key="frame" x="37" y="493" width="301" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Q3R-xy-y4M"/>
+                                </constraints>
                                 <state key="normal" title="5 Dollars"/>
                                 <connections>
                                     <action selector="FiveTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="UTg-Ie-uEW"/>
@@ -420,26 +424,54 @@
                                     <segue destination="2Cg-IK-sLi" kind="show" identifier="FiveToThanks" id="lDz-C5-CWu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-7c-zWf">
-                                <rect key="frame" x="37" y="237" width="301" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-7c-zWf">
+                                <rect key="frame" x="37" y="430" width="301" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="j4f-vZ-pjh"/>
+                                </constraints>
                                 <state key="normal" title="1 Dollar"/>
                                 <connections>
                                     <action selector="OneTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="1lo-T9-9xA"/>
                                     <segue destination="2Cg-IK-sLi" kind="show" identifier="OneToThanks" id="dN1-LZ-IeP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmZ-FB-z3z">
-                                <rect key="frame" x="37" y="533" width="301" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmZ-FB-z3z">
+                                <rect key="frame" x="37" y="552" width="301" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="EdN-gH-3Ot"/>
+                                </constraints>
                                 <state key="normal" title="10 Dollars"/>
                                 <connections>
                                     <action selector="TenTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="mDR-HQ-Fes"/>
                                     <segue destination="2Cg-IK-sLi" kind="show" identifier="TenToThanks" id="n3U-l8-Ctn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6E-zy-BMI">
+                                <rect key="frame" x="149" y="98" width="76" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AlR-L3-pbM" firstAttribute="leading" secondItem="YmZ-FB-z3z" secondAttribute="leading" id="3Ss-yu-r7A"/>
+                            <constraint firstItem="huh-zI-BjK" firstAttribute="top" secondItem="Thr-kG-xdf" secondAttribute="top" constant="154" id="5Wq-bL-5y4"/>
+                            <constraint firstItem="AlR-L3-pbM" firstAttribute="top" secondItem="9iT-7c-zWf" secondAttribute="bottom" constant="8" symbolic="YES" id="9yb-4W-jBa"/>
+                            <constraint firstItem="huh-zI-BjK" firstAttribute="leading" secondItem="Thr-kG-xdf" secondAttribute="leading" constant="86" id="Dos-ce-nrv"/>
+                            <constraint firstAttribute="bottom" secondItem="r4M-zL-bx0" secondAttribute="bottom" id="EVf-vJ-Iwf"/>
+                            <constraint firstItem="YmZ-FB-z3z" firstAttribute="top" secondItem="AlR-L3-pbM" secondAttribute="bottom" constant="4" id="I1P-Kr-AIt"/>
+                            <constraint firstItem="9iT-7c-zWf" firstAttribute="centerX" secondItem="huh-zI-BjK" secondAttribute="centerX" id="QLs-bG-XGR"/>
+                            <constraint firstItem="r4M-zL-bx0" firstAttribute="centerX" secondItem="huh-zI-BjK" secondAttribute="centerX" id="QyV-Uo-Ll8"/>
+                            <constraint firstItem="9iT-7c-zWf" firstAttribute="leading" secondItem="AlR-L3-pbM" secondAttribute="leading" id="Yhf-8A-jY0"/>
+                            <constraint firstItem="Thr-kG-xdf" firstAttribute="bottom" secondItem="YmZ-FB-z3z" secondAttribute="bottom" constant="16" id="dWT-zu-OLo"/>
+                            <constraint firstItem="huh-zI-BjK" firstAttribute="centerX" secondItem="Nah-Ck-lBO" secondAttribute="centerX" id="f36-dk-c78"/>
+                            <constraint firstItem="r4M-zL-bx0" firstAttribute="top" secondItem="Thr-kG-xdf" secondAttribute="top" id="kvX-yB-7QG"/>
+                            <constraint firstItem="AlR-L3-pbM" firstAttribute="trailing" secondItem="YmZ-FB-z3z" secondAttribute="trailing" id="v4B-kg-HeW"/>
+                            <constraint firstItem="9iT-7c-zWf" firstAttribute="leading" secondItem="Thr-kG-xdf" secondAttribute="leading" constant="37" id="vzm-Vy-gdI"/>
+                            <constraint firstItem="9iT-7c-zWf" firstAttribute="trailing" secondItem="AlR-L3-pbM" secondAttribute="trailing" id="y0t-JK-ALi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Thr-kG-xdf"/>
                     </view>
                     <connections>
@@ -451,7 +483,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htW-9D-rCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3252" y="841"/>
+            <point key="canvasLocation" x="2981.5999999999999" y="1294.9025487256372"/>
         </scene>
         <!--Donate Thanks View Controller-->
         <scene sceneID="Jnq-KH-eqa">
@@ -530,7 +562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5s-g2-Odp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4026" y="839"/>
+            <point key="canvasLocation" x="4254" y="1295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C3c-bE-lrQ">
@@ -549,7 +581,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o82-2q-q8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166" y="2059"/>
+            <point key="canvasLocation" x="3134" y="2319"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="8bh-JO-K1d">
@@ -604,7 +636,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuD-lA-Kfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3826" y="2059"/>
+            <point key="canvasLocation" x="4030" y="2319"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3v-5j-S84">
@@ -715,7 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ch2-GG-2jg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2406" y="2059"/>
+            <point key="canvasLocation" x="2370" y="2319"/>
         </scene>
         <!--Profile-->
         <scene sceneID="YiL-3J-R2N">
@@ -819,13 +851,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0B2-iv-me8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3295" y="115"/>
+            <point key="canvasLocation" x="2982" y="-830"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button Donate.jpg" width="784" height="299"/>
         <image name="Calm_background.jpg" width="1024" height="681"/>
         <image name="Donate.png" width="600" height="600"/>
+        <image name="DonateBackground.png" width="375" height="667"/>
         <image name="Mountains.jpg" width="1000" height="1194"/>
         <image name="User.png" width="16" height="16"/>
     </resources>
