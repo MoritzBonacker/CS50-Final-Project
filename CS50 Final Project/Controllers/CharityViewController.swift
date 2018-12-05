@@ -19,7 +19,7 @@ class CharityViewController: UIViewController {
     @IBOutlet weak var CharitySubcategory: UILabel!
     @IBOutlet weak var DonateButton: UIButton!
     @IBOutlet weak var CharityDescription: UILabel!
-    @IBOutlet weak var CharityRating: UILabel!
+    @IBOutlet weak var CharityRating: UIImageView!
     
     // Source: https://www.youtube.com/watch?v=Epb_ZZBFZIs
     @IBAction func CharityLink(_ sender: Any) {
@@ -75,7 +75,8 @@ class CharityViewController: UIViewController {
         self.CharityName.text = values[charities[self.counter]]!["Name"] as! String
         self.CharityDescription.text = values[charities[self.counter]]!["Description"] as! String
         self.CharityPic.image = UIImage(named: (picture as! String))
-        //  self.CharityRating.text = values["American Cancer Society"]!["Rating"] as! String
+        print(values[charities[self.counter]]!["Rating"] as! Int)
+        self.CharityRating.image = UIImage(named: ((String(values[charities[self.counter]]!["Rating"] as! Int)) + "stars.png"))
     }
     
     // Pushes Data to second view controller

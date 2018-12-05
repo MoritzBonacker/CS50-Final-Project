@@ -6,6 +6,7 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
+/*
 import UIKit
 import Firebase
 
@@ -88,3 +89,5 @@ class LoginViewController: UIViewController {
     }
     
 }
+
+ */
