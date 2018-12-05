@@ -26,8 +26,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        LoginButton.layer.cornerRadius = 7
-        RegisterButton.layer.cornerRadius = 7
+       LoginButton.roundButton()
+        
+      RegisterButton.roundButton()
     }
  
     

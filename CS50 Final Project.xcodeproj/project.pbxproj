@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		200D88C344ADBFD0CA1BD5CA /* Pods_CS50_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CD9531A590278096606347 /* Pods_CS50_Final_ProjectTests.framework */; };
-		2CC2718C21B120740078F0B3 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2718B21B120730078F0B3 /* user.png */; };
 		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
@@ -81,7 +80,6 @@
 /* Begin PBXFileReference section */
 		0882FF57E7102A021791C7B7 /* Pods-CS50 Final ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2AFC19757CD5F314B789AD38 /* Pods-CS50 Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.release.xcconfig"; sourceTree = "<group>"; };
-		2CC2718B21B120730078F0B3 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		2CC9B76821AB19FC00CDB78A /* CS50 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS50 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76921AB19FC00CDB78A /* CS50 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC9B76A21AB19FC00CDB78A /* CS50 Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS50 Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,7 +252,6 @@
 				C8F39DE721B784CD00CF7631 /* 5stars.png */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
 				C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */,
-				2CC2718B21B120730078F0B3 /* user.png */,
 				DCB9197921B0D029000F051F /* stc.png */,
 				C8ABE43121AF5B7C0055E4A3 /* Donate.png */,
 				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
@@ -435,7 +432,6 @@
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
 				C8858E3621B85CF200B8F23D /* light_background.png in Resources */,
-				2CC2718C21B120740078F0B3 /* user.png in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
@@ -752,14 +748,17 @@
 			baseConfigurationReference = 72B7D05B4060DCBE8688B819 /* Pods-CS50 Final Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YXJMYBN3J;
 				INFOPLIST_FILE = "$(SRCROOT)/CS50 Final Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project-Julian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -770,14 +769,17 @@
 			baseConfigurationReference = 2AFC19757CD5F314B789AD38 /* Pods-CS50 Final Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YXJMYBN3J;
 				INFOPLIST_FILE = "$(SRCROOT)/CS50 Final Project/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project-Julian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

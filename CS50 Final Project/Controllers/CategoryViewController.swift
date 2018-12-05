@@ -13,11 +13,7 @@ import Firebase
 var selected_cell = String()
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
-    @IBAction func toProfileButton(_ sender: Any) { performSegue(withIdentifier: "categoryToProfile", sender: self)
-    }
-    
+
     var values: Dictionary<String, AnyObject> = [:]
     var charities: Array<String> = []
     
@@ -72,9 +68,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // Source: https://www.youtube.com/watch?v=czWu1RXnnUE and https://www.youtube.com/watch?v=pG3n-dFoj0g
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let CharityViewData = segue.destination as! CharityViewController
+        let CharityViewData = segue.destination as? CharityViewController
         
-        CharityViewData.chosen_category = categoryToSend
+        CharityViewData?.chosen_category = categoryToSend
         
     }
 
@@ -109,4 +105,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }*/
     
 
-}
+
