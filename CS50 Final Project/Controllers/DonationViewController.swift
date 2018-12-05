@@ -36,17 +36,16 @@ var ref = Database.database().reference()
     @IBAction func OneTapped(_ sender: UIButton) {
         var user = Auth.auth().currentUser
         self.ref.child("users").child((user?.uid)!).setValue(["Amount": 1])
-        Segue(amount: "1")
-
+        Segue(amount: "One")
     }
     
     @IBAction func FiveTapped(_ sender: UIButton) {
-        Segue(amount: "5")
+        Segue(amount: "Five")
     }
     
 
     @IBAction func TenTapped(_ sender: UIButton) {
-        Segue(amount: "10")
+        Segue(amount: "Ten")
     }
     
     func Segue (amount: String) {
