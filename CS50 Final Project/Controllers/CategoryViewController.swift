@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Human Rights", "Public Policy"]
     
+    // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (categories.count)
     }
@@ -81,6 +82,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //var menuShowing = false
     
     override func viewDidLoad() {
+        let user = Auth.auth().currentUser
+        let id = user?.uid ?? "No user"
+        print(id)
             super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //menuView.layer.shadowOpacity = 1

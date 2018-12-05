@@ -6,13 +6,15 @@
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
-/*
+
 import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
     
     
+    @IBOutlet weak var LoginEmail: UITextField!
+    @IBOutlet weak var LoginPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,4 +92,3 @@ class LoginViewController: UIViewController {
     
 }
 
- */
