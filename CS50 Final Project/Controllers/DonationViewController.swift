@@ -33,18 +33,18 @@ class DonationViewController: UIViewController {
     
     @IBAction func OneTapped(_ sender: UIButton) {
         InsertDatabase(amount: 1)
-        Segue(amount: "One")
+        Segue(amount: "1")
     }
     
     @IBAction func FiveTapped(_ sender: UIButton) {
         InsertDatabase(amount: 1)
-        Segue(amount: "Five")
+        Segue(amount: "5")
     }
     
 
     @IBAction func TenTapped(_ sender: UIButton) {
         InsertDatabase(amount: 1)
-        Segue(amount: "Ten")
+        Segue(amount: "10")
     }
     
     func Segue (amount: String) {
