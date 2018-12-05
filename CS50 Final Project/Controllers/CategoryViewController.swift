@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
+var selected_cell = String()
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     
     @IBAction func toProfileButton(_ sender: Any) { performSegue(withIdentifier: "categoryToProfile", sender: self)
     }
@@ -18,7 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //@IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     //@IBOutlet weak var leadingConstraint1: NSLayoutConstraint!
     
-    let categories = ["Health", "Environment", "Education", "Animals", "Poverty"]
+    let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Bla", "Test", "What", "Hey", "More"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (categories.count)
@@ -30,20 +33,72 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.CharLogo.image = UIImage(named: (categories[indexPath.row] + ".png"))
         
         cell.CharLabel.text = categories[indexPath.row]
-        
+
         return (cell)
+    
+        
     }
     
 
+    // Source: https://www.youtube.com/watch?v=czWu1RXnnUE and https://www.youtube.com/watch?v=pG3n-dFoj0g
+    var categoryToSend = String()
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("bla")
+        
+        
+        categoryToSend = categories[indexPath.row]
+        self.performSegue(withIdentifier: "ToCharityView", sender: nil)
+        
+        /*
+        selected_cell = categories[indexPath.row]
+        print(indexPath.row)
+        print(selected_cell)
+        print("ABOVE HERE IT IS!!!")
+        */
+        /*
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let CharViewController = Storyboard.instantiateViewController(withIdentifier: "CharityViewController") as! CharityViewController
+        
+        CharViewController.chosen_category = selected_cell
+        self.navigationController?.pushViewController(CharViewController, animated: true)
+        */
+        
+    }
+
+
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let CharityViewData = segue.destination as! CharityViewController
+        
+        CharityViewData.chosen_category = categoryToSend
+        print("BELOW")
+        print(categoryToSend)
+        
+    }
+
+
+    
     //var menuShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //menuView.layer.shadowOpacity = 1
-    }
-    
 
+        // Pushes Data to charity view controller
+        // Source: https://www.youtube.com/watch?v=7fbTHFH3tl4
+        
+        }
+
+    
+    
+}
+
+
+
+    
     /*@IBAction func openMenu(_ sender: Any) {
     
         if (menuShowing){
@@ -62,4 +117,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         menuShowing = !menuShowing
     }*/
     
-}
+

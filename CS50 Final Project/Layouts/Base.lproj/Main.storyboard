@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ucc-tA-uEP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KJC-3C-rYc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -220,7 +220,7 @@
         <!--View Controller-->
         <scene sceneID="X8R-eK-BSm">
             <objects>
-                <viewController id="KJC-3C-rYc" customClass="ViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KJC-3C-rYc" customClass="ViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JFw-Nd-A2d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,16 +294,19 @@
                         <viewLayoutGuide key="safeArea" id="2Pj-jL-oza"/>
                     </view>
                     <navigationItem key="navigationItem" id="vWK-me-THa"/>
+                    <connections>
+                        <segue destination="Ucc-tA-uEP" kind="show" identifier="ToCharityView" id="g6D-0p-nIl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxr-Do-Mzn" sceneMemberID="firstResponder"/>
                 <exit id="PCC-y4-t3f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2982" y="425"/>
+            <point key="canvasLocation" x="2981.5999999999999" y="424.13793103448279"/>
         </scene>
         <!--Charity View Controller-->
         <scene sceneID="bNX-XU-voc">
             <objects>
-                <viewController id="Ucc-tA-uEP" customClass="CharityViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ucc-tA-uEP" customClass="CharityViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAI-Zk-oZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,7 +401,7 @@
         <!--Donation View Controller-->
         <scene sceneID="E2B-JM-7uM">
             <objects>
-                <viewController id="eTc-0P-hYb" customClass="DonationViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eTc-0P-hYb" customClass="DonationViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nah-Ck-lBO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -420,7 +423,6 @@
                                 <state key="normal" title="5 Dollars"/>
                                 <connections>
                                     <action selector="FiveTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="UTg-Ie-uEW"/>
-                                    <action selector="TwoTapped:" destination="eTc-0P-hYb" eventType="touchUpInside" id="G8B-xR-GrZ"/>
                                     <segue destination="2Cg-IK-sLi" kind="show" identifier="FiveToThanks" id="lDz-C5-CWu"/>
                                 </connections>
                             </button>
@@ -494,15 +496,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IF1-15-WFt">
-                                <rect key="frame" x="-25" y="20" width="516" height="603"/>
+                                <rect key="frame" x="-25" y="64" width="516" height="559"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="516" id="xha-Jn-pii"/>
                                 </constraints>
                             </imageView>
                             <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-LE-rcw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="csI-lC-QxM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you for donating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ql7-CF-pHW">
@@ -528,10 +530,6 @@
                                             <state key="normal" title="Return to Categorires">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
-                                            <connections>
-                                                <action selector="returnToCategories:" destination="2Cg-IK-sLi" eventType="touchUpInside" id="jIA-tT-unR"/>
-                                                <segue destination="KJC-3C-rYc" kind="presentation" identifier="returnToCategories" id="F0K-cC-bYn"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -556,8 +554,7 @@
                         <viewLayoutGuide key="safeArea" id="LHJ-ee-zUL"/>
                     </view>
                     <connections>
-                        <outlet property="ReturnButton" destination="ami-xz-p6p" id="K8S-ii-nfz"/>
-                        <outlet property="returnToCategories" destination="Sfn-vf-f3x" id="lwJ-K8-79T"/>
+                        <outlet property="NavButton" destination="Sfn-vf-f3x" id="KSC-4k-1zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5s-g2-Odp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -863,8 +860,8 @@
         <image name="User.png" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dN1-LZ-IeP"/>
-        <segue reference="F0K-cC-bYn"/>
+        <segue reference="n3U-l8-Ctn"/>
+        <segue reference="pha-yY-UsG"/>
         <segue reference="H4c-Fi-hrl"/>
     </inferredMetricsTieBreakers>
 </document>

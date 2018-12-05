@@ -12,7 +12,7 @@ import Firebase
 
 class CharityViewController: UIViewController {
 
-    
+    var selected_cell = String()
     
     @IBOutlet weak var CharityPic: UIImageView!
     @IBOutlet weak var CharityName: UILabel!
@@ -27,8 +27,10 @@ class CharityViewController: UIViewController {
     var charities: Array<String> = []
     var size: Int = 0
     
+    var chosen_category = String()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
         // Source: https://www.youtube.com/watch?v=mA4GZJjUHLo
         CharityPic.isUserInteractionEnabled = true
@@ -42,16 +44,18 @@ class CharityViewController: UIViewController {
         swiftLeft.direction = UISwipeGestureRecognizer.Direction.left
         CharityPic.addGestureRecognizer(swiftLeft)
         
-        let chosen_category = "Health"
+        print("UNDER THIS FUCKER")
+        print(chosen_category)
+        
+        //let chosen_category = "Health"
         let ref = Database.database().reference()
         let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
             self.values = snapshot.value as! [String : AnyObject]
             self.charities = Array(self.values.keys)
             self.size = self.charities.count
-            self.CharitySubcategory.text = chosen_category
+            self.CharitySubcategory.text = self.chosen_category
             self.nextCharity()
         })
-        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
