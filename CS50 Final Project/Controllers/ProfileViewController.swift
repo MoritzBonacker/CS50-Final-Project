@@ -14,12 +14,16 @@ class ProfileViewController: UIViewController {
     
     var names_list = [String] ()
     var amounts_list = [Int] ()
+    var times_list = [Double] ()
     var values: Dictionary<String, AnyObject> = [:]
     
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var Username: UILabel!
+    
+    @IBOutlet weak var lastDonation: UILabel!
+    
     
     func LoadHistory() {
         
@@ -44,7 +48,17 @@ class ProfileViewController: UIViewController {
                         self.names_list.append(self.values[value]?["Name"] as! String)
                         // print(self.values[value]?["Amount"])
                         self.amounts_list.append(self.values[value]?["Amount"] as! Int)
+                        self.times_list.append(self.values[value]?["Timestamp"] as! Double)
                     }
+                    let size = self.times_list.count
+                    let x = self.times_list[0] / 1000
+                    let converted = NSDate(timeIntervalSince1970: x)
+                    let formatter = DateFormatter()
+                    formatter.timeZone = NSTimeZone.local
+                    formatter.dateFormat = "MMM d, h:mm a"
+                    let time = formatter.string(from: converted as Date)
+                    print(time)
+                    self.lastDonation.text = time
                     self.tableView.reloadData()
                 })
                 

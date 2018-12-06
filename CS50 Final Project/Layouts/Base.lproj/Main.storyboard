@@ -998,6 +998,13 @@
                                     <constraint firstAttribute="height" constant="127" id="7n1-qS-u8J"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BT-vt-pc6">
+                                <rect key="frame" x="239" y="395" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1037,6 +1044,7 @@
                     <connections>
                         <outlet property="LogoutButton" destination="Adb-if-1FP" id="GZY-j3-8na"/>
                         <outlet property="Username" destination="r2s-hg-ZQt" id="RdR-3E-khZ"/>
+                        <outlet property="lastDonation" destination="1BT-vt-pc6" id="B75-hq-qaq"/>
                         <outlet property="tableView" destination="kHC-BF-wN6" id="nVe-yV-FR0"/>
                     </connections>
                 </viewController>
@@ -1058,6 +1066,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="n3U-l8-Ctn"/>
         <segue reference="TMh-7i-BbN"/>
-        <segue reference="ai8-Xf-yf4"/>
+        <segue reference="xZp-Cg-leG"/>
     </inferredMetricsTieBreakers>
 </document>
