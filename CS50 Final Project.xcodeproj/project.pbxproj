@@ -252,9 +252,9 @@
 			children = (
 				C8ABE42A21AF588B0055E4A3 /* Animals.png */,
 				C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */,
-				C8ABE42921AF588B0055E4A3 /* Education.png */,
 				C8ABE42721AF588B0055E4A3 /* Environment.png */,
 				C8AE625C21B7135D000A224E /* DonateBackground.png */,
+				C8ABE42921AF588B0055E4A3 /* Education.png */,
 				C8F39DDB21B77E6200CF7631 /* acs.png */,
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,

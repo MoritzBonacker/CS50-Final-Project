@@ -4,7 +4,7 @@
 //
 //  Created by Julian Frings on 29.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-////
+//////
 
 import UIKit
 import Firebase
@@ -54,7 +54,8 @@ class ProfileViewController: UIViewController {
     //
     //    let userID = "userID"
     override func viewDidLoad() {
-        LogoutButton.backgroundColor = UIColor.darkGray
+        LogoutButton.roundButton()
+        
         tableView.dataSource = self
         LoadHistory()
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
