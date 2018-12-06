@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!) { user, error in
             if error != nil || user == nil {
                 print("There was an error")
-                self.createAlert(title: "Error", message: "Login not successful")
+                self.createAlert(title: "Error", message: (error?.localizedDescription)!)
                 return
             }
             else {

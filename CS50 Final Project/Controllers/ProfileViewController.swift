@@ -60,21 +60,22 @@ class ProfileViewController: UIViewController {
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
     // https://www.youtube.com/watch?v=uBesaTUJZi0
 }
-
-
-
-    /*
+    
     @IBAction func logoutTapped(_ sender: UIButton) {
-        let signout = try? Auth.auth().signOut()
-        if signout == nil {
-            print("error")
-            else do {
-                print("success")
-
-            }
+        do {
+            try Auth.auth().signOut()
+        } catch let logoutError {
+            self.createAlert(title: "Error", message: (logoutError as! String))
         }
-    }*/
-
+    }
+    
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension ProfileViewController: UITableViewDataSource {
@@ -88,7 +89,7 @@ extension ProfileViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "history", for: indexPath) as! ViewControllerTableViewCellHistory
         
         cell.CharityName.text = names_list[indexPath.row]
-        cell.CharityAmount.text = String(amounts_list[indexPath.row])
+        cell.CharityAmount.text = String(amounts_list[indexPath.row]) + " $"
         
         return (cell)
     }
