@@ -23,27 +23,37 @@ class ProfileViewController: UIViewController {
     func LoadHistory() {
         
             let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
+            if user == nil {
+                return()
+            }
         
-            LogoutButton.backgroundColor = UIColor.darkGray
-            self.Username.text = user?.email
-        
-            let ref = Database.database().reference()
-            ref.child("user").child(user!.uid).observe(DataEventType.value, with: { (snapshot) in
-                self.values = snapshot.value as? Dictionary<String, AnyObject> ?? [:]
-                // print(self.values)
-        
-                for value in self.values.keys {
-                    // print(self.values[value]?["Name"])
-                    self.names_list.append(self.values[value]?["Name"] as! String)
-                    // print(self.values[value]?["Amount"])
-                    self.amounts_list.append(self.values[value]?["Amount"] as! Int)
-                }
-                self.tableView.reloadData()
-        })
+            else {
+                
+                self.Username.text = user?.email
+                
+                let ref = Database.database().reference()
+                ref.child("user").child(user!.uid).observe(DataEventType.value, with: { (snapshot) in
+                    self.values = snapshot.value as? Dictionary<String, AnyObject> ?? [:]
+                    // print(self.values)
+                    
+                    for value in self.values.keys {
+                        // print(self.values[value]?["Name"])
+                        self.names_list.append(self.values[value]?["Name"] as! String)
+                        // print(self.values[value]?["Amount"])
+                        self.amounts_list.append(self.values[value]?["Amount"] as! Int)
+                    }
+                    self.tableView.reloadData()
+                })
+                
+        }
+    
     }
     //
     //    let userID = "userID"
     override func viewDidLoad() {
+        
+        LogoutButton.backgroundColor = UIColor.darkGray
+        
         tableView.dataSource = self
         LoadHistory()
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
