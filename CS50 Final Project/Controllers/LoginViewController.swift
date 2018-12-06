@@ -26,9 +26,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       LoginButton.roundButton()
+        LoginButton.roundButton()
         
-      RegisterButton.roundButton()
+       RegisterButton.roundButton()
     }
  
     
@@ -53,32 +53,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    // Register functionality
-    @IBAction func tappedRegister(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "loginToRegister", sender: self);
-        }
-    
-    @IBOutlet weak var RegisterEmail: UITextField!
-    @IBOutlet weak var RegisterPassword: UITextField!
-    @IBOutlet weak var RegisterConfirmation: UITextField!
-    
-    @IBAction func tappedRegistered(_ sender: UIButton) {
-        
-        if RegisterPassword.text! != RegisterConfirmation.text! {
-            return
-        }
-        Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)  { user, error in
-            if error == nil && user != nil {
-                print("User created!")
-                self.performSegue(withIdentifier: "registerToMenu", sender: self)
-            }
-            else {
-                print("Error: \(error?.localizedDescription)")
-            }
-        }
- 
-        
-    }
+
    /*
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "loginToMenu" {
