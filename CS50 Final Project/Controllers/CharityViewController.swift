@@ -1,10 +1,9 @@
-// aaa
+//  View Controller for Charity
 //  CharityViewController.swift
 //  CS50 Final Project
 //
-//  Created by Julian Frings on 28.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-//Charity UI
+//
 
 
 import UIKit
@@ -26,12 +25,7 @@ class CharityViewController: UIViewController {
         UIApplication.shared.open(URL (string:values[charities[self.counter]]!["Link"] as! String)! as URL, options: [:], completionHandler: nil)
         
     }
-    
-    // if let url = NSURL(string: "www.google.com"){
-        //    UIApplication.sharedApplication
-        //}
-    
-    
+
     
     var counter = 0
     var values: Dictionary<String, AnyObject> = [:]
@@ -65,8 +59,6 @@ class CharityViewController: UIViewController {
             self.CharitySubcategory.text = self.chosen_category
             self.nextCharity()
         })
-
-        // Do any additional setup after loading the view.
     }
     
     func nextCharity () {
@@ -79,12 +71,11 @@ class CharityViewController: UIViewController {
         self.CharityRating.image = UIImage(named: ((String(values[charities[self.counter]]!["Rating"] as! Int)) + "stars.png"))
     }
     
-    // Pushes Data to second view controller
+    // Pushes Data of what charity is selected to donate view controller
     // Source: https://www.youtube.com/watch?v=7fbTHFH3tl4
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var CharityViewData = segue.destination as! DonationViewController
         CharityViewData.Charity_selected = CharityName.text!
-
     }
             
     @objc func swipeGesture(sender: UIGestureRecognizer) {
@@ -118,20 +109,6 @@ class CharityViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 

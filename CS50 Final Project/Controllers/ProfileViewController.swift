@@ -9,6 +9,7 @@ Copyright © 2018 CS50 Project Team. All rights reserved. */
 import UIKit
 import Firebase
 
+// Source: https://www.youtube.com/watch?v=VFtsSEYDNRU
 class ProfileViewController: UIViewController {
     
     // Declares Dictionary to hold the data retrieved from Firebase as well as an Array in which information about past transactions will be stored

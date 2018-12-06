@@ -1,8 +1,7 @@
-//
+//  View Controller for Register
 //  RegisterViewController.swift
 //  CS50 Final Project
 //
-//  Created by Julian Frings on 05.12.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 
@@ -14,6 +13,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Stylizes the register button
         RegisterButton.roundButton()
         // Do any additional setup after loading the view.
     }
@@ -54,16 +54,5 @@ class RegisterViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
