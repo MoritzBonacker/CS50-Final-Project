@@ -11,6 +11,12 @@
 		2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
 		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
+		C852E06321B8EB2A00864C41 /* cpj.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E05D21B8EB2100864C41 /* cpj.png */; };
+		C852E06421B8EB2A00864C41 /* brookings.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E05E21B8EB2300864C41 /* brookings.png */; };
+		C852E06521B8EB2A00864C41 /* gap.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E05F21B8EB2400864C41 /* gap.png */; };
+		C852E06621B8EB2A00864C41 /* HRW.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E06021B8EB2500864C41 /* HRW.png */; };
+		C852E06721B8EB2A00864C41 /* hrf.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E06121B8EB2700864C41 /* hrf.png */; };
+		C852E06821B8EB2A00864C41 /* Msf.png in Resources */ = {isa = PBXBuildFile; fileRef = C852E06221B8EB2800864C41 /* Msf.png */; };
 		C8858E3621B85CF200B8F23D /* light_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3421B85CF100B8F23D /* light_background.png */; };
 		C8858E3721B85CF200B8F23D /* dark_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3521B85CF100B8F23D /* dark_background.png */; };
 		C8858E3921B85D6A00B8F23D /* IconColor.png in Resources */ = {isa = PBXBuildFile; fileRef = C8858E3821B85D6900B8F23D /* IconColor.png */; };
@@ -103,6 +109,12 @@
 		72B7D05B4060DCBE8688B819 /* Pods-CS50 Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.debug.xcconfig"; sourceTree = "<group>"; };
 		990067DDA250E6112649DACB /* Pods-CS50 Final ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C809A5B521AD151B00CF6B5E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C852E05D21B8EB2100864C41 /* cpj.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cpj.png; sourceTree = "<group>"; };
+		C852E05E21B8EB2300864C41 /* brookings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brookings.png; sourceTree = "<group>"; };
+		C852E05F21B8EB2400864C41 /* gap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gap.png; sourceTree = "<group>"; };
+		C852E06021B8EB2500864C41 /* HRW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HRW.png; sourceTree = "<group>"; };
+		C852E06121B8EB2700864C41 /* hrf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hrf.png; sourceTree = "<group>"; };
+		C852E06221B8EB2800864C41 /* Msf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Msf.png; sourceTree = "<group>"; };
 		C8858E3421B85CF100B8F23D /* light_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_background.png; sourceTree = "<group>"; };
 		C8858E3521B85CF100B8F23D /* dark_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_background.png; sourceTree = "<group>"; };
 		C8858E3821B85D6900B8F23D /* IconColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconColor.png; sourceTree = "<group>"; };
@@ -256,6 +268,12 @@
 				C8AE625C21B7135D000A224E /* DonateBackground.png */,
 				C8ABE42921AF588B0055E4A3 /* Education.png */,
 				C8F39DDB21B77E6200CF7631 /* acs.png */,
+				C852E05E21B8EB2300864C41 /* brookings.png */,
+				C852E05D21B8EB2100864C41 /* cpj.png */,
+				C852E05F21B8EB2400864C41 /* gap.png */,
+				C852E06121B8EB2700864C41 /* hrf.png */,
+				C852E06021B8EB2500864C41 /* HRW.png */,
+				C852E06221B8EB2800864C41 /* Msf.png */,
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
 				C8858E3821B85D6900B8F23D /* IconColor.png */,
@@ -444,9 +462,12 @@
 				C8F39DFB21B8105600CF7631 /* RoundedIcon.png in Resources */,
 				C8858E3921B85D6A00B8F23D /* IconColor.png in Resources */,
 				C8F39DE821B784CD00CF7631 /* 0stars.png in Resources */,
+				C852E06321B8EB2A00864C41 /* cpj.png in Resources */,
 				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
+				C852E06621B8EB2A00864C41 /* HRW.png in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
 				C8B46CF921B8B3AC008C7E00 /* blue_background.png in Resources */,
+				C852E06721B8EB2A00864C41 /* hrf.png in Resources */,
 				C8B46D0621B8BF46008C7E00 /* monkey.jpeg in Resources */,
 				C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */,
 				C8858E3721B85CF200B8F23D /* dark_background.png in Resources */,
@@ -456,6 +477,7 @@
 				C8B46D0821B8BF46008C7E00 /* protest.jpg in Resources */,
 				C8F39DFD21B810F100CF7631 /* IconWhite.png in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
+				C852E06521B8EB2A00864C41 /* gap.png in Resources */,
 				C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */,
 				C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */,
 				C8F39DEB21B784CD00CF7631 /* 1stars.png in Resources */,
@@ -480,6 +502,8 @@
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */,
 				C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */,
+				C852E06821B8EB2A00864C41 /* Msf.png in Resources */,
+				C852E06421B8EB2A00864C41 /* brookings.png in Resources */,
 				C8B46CFF21B8BBD6008C7E00 /* thankful.png in Resources */,
 				C8858E3B21B85DD700B8F23D /* darkdark_background.png in Resources */,
 				C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */,
