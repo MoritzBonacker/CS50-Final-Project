@@ -33,6 +33,7 @@
 		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
 		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AE625C21B7135D000A224E /* DonateBackground.png */; };
+		C8B46CF321B89CEC008C7E00 /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CF221B89CEC008C7E00 /* User.png */; };
 		C8E92AF321B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */; };
 		C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDA21B77E6100CF7631 /* unicef.jpg */; };
 		C8F39DDF21B77E6200CF7631 /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDB21B77E6200CF7631 /* acs.png */; };
@@ -114,6 +115,7 @@
 		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
 		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C8AE625C21B7135D000A224E /* DonateBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonateBackground.png; sourceTree = "<group>"; };
+		C8B46CF221B89CEC008C7E00 /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User.png; sourceTree = "<group>"; };
 		C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCellHistory.swift; sourceTree = "<group>"; };
 		C8F39DDA21B77E6100CF7631 /* unicef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unicef.jpg; sourceTree = "<group>"; };
 		C8F39DDB21B77E6200CF7631 /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
 				C8858E3821B85D6900B8F23D /* IconColor.png */,
+				C8B46CF221B89CEC008C7E00 /* User.png */,
 				C8F39DF221B78ACD00CF7631 /* Human Rights.png */,
 				C8F39DF321B78ACD00CF7631 /* Public Policy.png */,
 				C8858E3521B85CF100B8F23D /* dark_background.png */,
@@ -424,6 +427,7 @@
 				C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */,
 				C8F39DEB21B784CD00CF7631 /* 1stars.png in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
+				C8B46CF321B89CEC008C7E00 /* User.png in Resources */,
 				C8F39DF421B78ACD00CF7631 /* Human Rights.png in Resources */,
 				C8F39DEC21B784CD00CF7631 /* 4stars.png in Resources */,
 				DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */,
