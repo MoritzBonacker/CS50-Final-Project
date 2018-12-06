@@ -53,8 +53,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         
         LogoutButton.backgroundColor = UIColor.darkGray
-        
-        tableView.dataSource = self
+
         LoadHistory()
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
     // https://www.youtube.com/watch?v=uBesaTUJZi0
