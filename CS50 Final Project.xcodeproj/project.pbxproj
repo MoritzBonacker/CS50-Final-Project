@@ -756,7 +756,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project-Julian";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -777,7 +777,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project-Julian";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS50-Project-Team.CS50-Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
