@@ -1,7 +1,7 @@
 /* RegisterViewController.swift
 CS50 Final Project
  
-Implements register page. User can register in which case a new user is created in Firebase. Checks for invalid user input and username availability and displays a user alter if invalid input was added.
+Implements register functionality. User can register in which case a new user is created in Firebase. Checks for invalid user input and username availability and displays a user alter if invalid input was added.
 
 Copyright © 2018 CS50 Project Team. All rights reserved. */
 

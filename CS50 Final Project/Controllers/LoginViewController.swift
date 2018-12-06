@@ -1,9 +1,9 @@
-//  Login ViewController
-//  ViewController.swift
-//  CS50 Final Project
-//
-//  Copyright © 2018 CS50 Project Team. All rights reserved.
-//
+/* LoginViewController.swift
+ CS50 Final Project
+ 
+ Implements login functionality. Users' input is checked and if login was successful, access to app data is granted.
+ 
+ Copyright © 2018 CS50 Project Team. All rights reserved. */
 
 
 import UIKit
@@ -14,8 +14,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var LoginEmail: UITextField!
     @IBOutlet weak var LoginPassword: UITextField!
-    
-    
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var RegisterButton: UIButton!
     
@@ -26,42 +24,25 @@ class LoginViewController: UIViewController {
         LoginButton.roundButton()
         RegisterButton.roundButton()
     }
- 
     
-    override func viewDidAppear(_ animated: Bool){
-    }
-    
-    let loginToMenu = "loginToMenu"
-    
-    // Login functionality
+    // Implements login functionality
     @IBAction func tappedLogin(_ sender: UIButton) {
+        
+        // Login credentials are passed to the database
         Auth.auth().signIn(withEmail: LoginEmail.text!, password: LoginPassword.text!) { user, error in
+            
+            // If login was not successful, user alert is created and user can't access the next page
             if error != nil || user == nil {
-                print("There was an error")
                 self.createAlert(title: "Error", message: (error?.localizedDescription)!)
                 return
             }
             else {
-                print("Successfully logged in")
                 self.performSegue(withIdentifier: "loginToMenu", sender: self)
             }
         }
     }
     
-
-   /*
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "loginToMenu" {
-            if Auth.auth().currentUser == nil {
-                print("No Segue")
-                return false
-            }
-            else {
-                print("Segue")
-            }
-        }
-        return true
-    } */
+    // Creates a user alert with individualized message, source: https://www.youtube.com/watch?v=4EAGIiu7SFU&t=357s
     func createAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
@@ -69,6 +50,4 @@ class LoginViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
 }
-

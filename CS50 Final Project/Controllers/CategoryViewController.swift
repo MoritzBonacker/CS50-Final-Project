@@ -1,9 +1,9 @@
-//  View Controller for Categories
-//  ViewController.swift
-//  CategoriesCharityaa
-//
-//  Copyright © 2018 Julian Frings. All rights reserved.
-//
+/* CategoryViewController.swift
+ CS50 Final Project
+ 
+ Implements the category overview page. Categories are predefined in an array and inserted in a table with their corresponding icon. 
+ 
+ Copyright © 2018 CS50 Project Team. All rights reserved. */
 
 import Foundation
 import UIKit
@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // Array of categories
     let categories = ["Health", "Environment", "Education", "Animals", "Poverty", "Human Rights", "Public Policy"]
     
-    // Initialization fo TableView
+    // Initialization for TableView
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM
     
     // Makes as many rows in table as there are elements in array categories
@@ -34,18 +34,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Variable to store data of each cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath) as! ViewControllerTableViewCell
         
-        // Populates UIImage in Table view by iterating through catgegories array and concatenating category name with .png string
-        // which gives the icon's filename
-        // All icons public-domain and royalty free from https://thenounproject.com/
+        /* Populates UIImage in Table view by iterating through catgegories array and concatenating category name with .png string
+            which gives the icon's filename
+            All icons public-domain and royalty free from https://thenounproject.com/ */
         cell.CharLogo.image = UIImage(named: (categories[indexPath.row] + ".png"))
         
         // Populates Label with category by iterating through category array
         cell.CharLabel.text = categories[indexPath.row]
-
         return (cell)
     }
     
-
     // Initializes variable to store the category that was selected and is to be pushed to charity ViewController
     var categoryToSend = String()
     
@@ -63,8 +61,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let CharityViewData = segue.destination as? CharityViewController
         CharityViewData?.chosen_category = categoryToSend
     }
-    
-    override func viewDidLoad() {
-    }
 }
-    

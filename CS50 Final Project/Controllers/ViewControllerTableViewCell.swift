@@ -1,9 +1,9 @@
-//  View Controller for category TableView
-//  ViewControllerTableViewCell.swift
-//  CategoriesCharity
-//
-//  Copyright © 2018 Julian Frings. All rights reserved.
-//
+/* ViewControllerTableViewCell.swift
+ CS50 Final Project
+ 
+ Supports the implementation of the table displaying charity categories.
+ 
+ Copyright © 2018 CS50 Project Team. All rights reserved. */
 
 import UIKit
 

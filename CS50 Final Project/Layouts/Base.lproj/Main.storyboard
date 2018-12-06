@@ -655,10 +655,10 @@
             </objects>
             <point key="canvasLocation" x="2776.8000000000002" y="1144.6776611694154"/>
         </scene>
-        <!--Donate Thanks View Controller-->
+        <!--View Controller-->
         <scene sceneID="Jnq-KH-eqa">
             <objects>
-                <viewController id="2Cg-IK-sLi" customClass="DonateThanksViewController" customModule="CS50_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Cg-IK-sLi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQF-99-hUF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1091,7 +1091,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n3U-l8-Ctn"/>
-        <segue reference="TMh-7i-BbN"/>
+        <segue reference="Pyn-6N-sNP"/>
         <segue reference="xZp-Cg-leG"/>
     </inferredMetricsTieBreakers>
 </document>
