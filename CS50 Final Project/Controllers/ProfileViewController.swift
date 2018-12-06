@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     var amounts_list = [Int] ()
     var values: Dictionary<String, AnyObject> = [:]
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var Username: UILabel!
@@ -24,11 +25,13 @@ class ProfileViewController: UIViewController {
         
             let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
             if user == nil {
+                print("HERE")
                 return()
             }
         
             else {
-                
+                print("UNDER THIS FUCKER")
+                print(user?.uid)
                 self.Username.text = user?.email
                 
                 let ref = Database.database().reference()
@@ -51,9 +54,7 @@ class ProfileViewController: UIViewController {
     //
     //    let userID = "userID"
     override func viewDidLoad() {
-        
         LogoutButton.backgroundColor = UIColor.darkGray
-        
         tableView.dataSource = self
         LoadHistory()
     // Source: https://www.youtube.com/watch?v=fFpMiSsynXM

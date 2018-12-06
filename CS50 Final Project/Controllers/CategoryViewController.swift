@@ -104,6 +104,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         menuShowing = !menuShowing
     }*/
     
-
-
-}
