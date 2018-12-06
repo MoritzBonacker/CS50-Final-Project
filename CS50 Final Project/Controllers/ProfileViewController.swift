@@ -1,15 +1,13 @@
-/*  ProfileViewController.swift
+/* ProfileViewController.swift
 CS50 Final Project
 
-Handles the Profile View by reading data about user's transaction history and displaying it in a table view.
-The Controller also implements the functionality to log out.
+Implements a user's profile page by reading data about user's transaction history from Firebase and displaying it in a table view. The Controller also implements the functionality to log out.
  
 Copyright © 2018 CS50 Project Team. All rights reserved. */
 
 import UIKit
 import Firebase
 
-// Source: https://www.youtube.com/watch?v=VFtsSEYDNRU
 class ProfileViewController: UIViewController {
     
     // Declares Dictionary to hold the data retrieved from Firebase as well as an Array in which information about past transactions will be stored
@@ -22,11 +20,18 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var Username: UILabel!
     @IBOutlet weak var lastDonation: UILabel!
     
+    // Refreshes table view with data from Firebase, source: https://www.youtube.com/watch?v=VFtsSEYDNRU as well as https://www.youtube.com/watch?v=fFpMiSsynXM and https://www.youtube.com/watch?v=uBesaTUJZi0
+    override func viewDidLoad() {
+        LogoutButton.roundButton()
+        tableView.dataSource = self
+        LoadHistory()
+    }
+
     // Retrieves data about user's past transactions from Firebase and stores them into an Array
     func LoadHistory() {
         
         // Identifies current user and only proceeds if user is logged in
-        let user = Auth.auth().currentUser // https://firebase.google.com/docs/auth/web/manage-users
+        let user = Auth.auth().currentUser
         if user == nil {
             return()
         }
@@ -39,7 +44,7 @@ class ProfileViewController: UIViewController {
             ref.child("user").child(user!.uid).observe(.childAdded) { (snapshot: DataSnapshot) in
             self.values = (snapshot.value as? Dictionary<String, AnyObject>)!
 
-            // Stores transaction information seperate variables
+            // Stores transaction information in seperate variables
             let transactionName = self.values["Name"] as! String
             let transactionAmount = self.values["Amount"] as! Int
             let transactionTime = self.values["Timestamp"] as! Double
@@ -57,18 +62,11 @@ class ProfileViewController: UIViewController {
             formatter.dateFormat = "MMM d, h:mm a"
             let time = formatter.string(from: converted as Date)
             self.lastDonation.text = time
-                }
+            }
         }
     }
     
-    // Refreshes table view with data from Firebase, source: https://www.youtube.com/watch?v=VFtsSEYDNRU as well as https://www.youtube.com/watch?v=fFpMiSsynXM and https://www.youtube.com/watch?v=uBesaTUJZi0
-    override func viewDidLoad() {
-        LogoutButton.roundButton()
-        tableView.dataSource = self
-        LoadHistory()
-}
-    
-    // Implements log out functionality
+    // Implements log out functionality and creates user alert if any error occurs
     @IBAction func logoutTapped(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
@@ -77,7 +75,7 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    // Creates a user alert with individualized message
+    // Creates a user alert with individualized message, source: https://www.youtube.com/watch?v=4EAGIiu7SFU&t=357s
     func createAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in

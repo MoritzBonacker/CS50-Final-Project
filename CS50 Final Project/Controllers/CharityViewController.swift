@@ -1,9 +1,9 @@
-//  View Controller for Charity
-//  CharityViewController.swift
-//  CS50 Final Project
-//
-//  Copyright © 2018 CS50 Project Team. All rights reserved.
-//
+/* CharityViewController.swift
+ CS50 Final Project
+ 
+ Implements the function to swipe through charities. Information about charities in chosen category is retrieved from firebase and presented to the user. If user swipes, information is changed to the next charity's information.
+ 
+ Copyright © 2018 CS50 Project Team. All rights reserved. */
 
 
 import UIKit
@@ -13,6 +13,7 @@ class CharityViewController: UIViewController {
 
     var selected_cell = String()
     
+    // Declares IBOutlets to reference particular elements in the View
     @IBOutlet weak var CharityPic: UIImageView!
     @IBOutlet weak var CharityName: UILabel!
     @IBOutlet weak var CharitySubcategory: UILabel!
@@ -20,13 +21,12 @@ class CharityViewController: UIViewController {
     @IBOutlet weak var CharityDescription: UILabel!
     @IBOutlet weak var CharityRating: UIImageView!
     
-    // Source: https://www.youtube.com/watch?v=Epb_ZZBFZIs
+    // Creates a link to charity's homepage, source: https://www.youtube.com/watch?v=Epb_ZZBFZIs
     @IBAction func CharityLink(_ sender: Any) {
         UIApplication.shared.open(URL (string:values[charities[self.counter]]!["Link"] as! String)! as URL, options: [:], completionHandler: nil)
-        
     }
-
     
+    // Initializes
     var counter = 0
     var values: Dictionary<String, AnyObject> = [:]
     var charities: Array<String> = []
@@ -50,8 +50,6 @@ class CharityViewController: UIViewController {
         swiftLeft.direction = UISwipeGestureRecognizer.Direction.left
         CharityPic.addGestureRecognizer(swiftLeft)
 
-        
-        //let chosen_category = "Health"
         ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
             self.values = snapshot.value as! [String : AnyObject]
             self.charities = Array(self.values.keys)

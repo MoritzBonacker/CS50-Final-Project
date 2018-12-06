@@ -19,5 +19,18 @@ class Transaction {
     }
 }
 
+class Charity {
+    var charity_name: String
+    var charity_description: String
+    var charity_rating: Int
+    var charity_picture: String
+    init(name: String, description: String, rating: Int, picture: String) {
+        charity_name = name
+        charity_description = description
+        charity_rating = rating
+        charity_picture = picture
+    }
+}
+
 
 
