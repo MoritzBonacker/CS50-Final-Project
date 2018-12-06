@@ -58,7 +58,7 @@ class CharityViewController: UIViewController {
 
         
         //let chosen_category = "Health"
-        let query = ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
+        ref.child("Charities").queryOrdered(byChild: "Category").queryEqual(toValue: chosen_category).observe(DataEventType.value, with: { (snapshot) in
             self.values = snapshot.value as! [String : AnyObject]
             self.charities = Array(self.values.keys)
             self.size = self.charities.count
@@ -83,7 +83,6 @@ class CharityViewController: UIViewController {
     // Source: https://www.youtube.com/watch?v=7fbTHFH3tl4
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var CharityViewData = segue.destination as! DonationViewController
-        
         CharityViewData.Charity_selected = CharityName.text!
 
     }
@@ -92,13 +91,15 @@ class CharityViewController: UIViewController {
         if let swipeGesture = sender as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizer.Direction.right:
+                
                 print("Swipe right")
                 if counter > 0 {
                     counter = counter - 1
                     nextCharity()
                 }
                 else {
-                    return
+                    counter = size - 1
+                    nextCharity()
                 }
                 
             case UISwipeGestureRecognizer.Direction.left:
@@ -108,7 +109,8 @@ class CharityViewController: UIViewController {
                     nextCharity()
                 }
                 else {
-                    return
+                    counter = 0
+                    nextCharity()
                 }
                 
             default:
