@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		200D88C344ADBFD0CA1BD5CA /* Pods_CS50_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CD9531A590278096606347 /* Pods_CS50_Final_ProjectTests.framework */; };
 		76C7FAF09F3E09D1251AD6F8 /* Pods_CS50_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F5086402F3983E718139F /* Pods_CS50_Final_Project.framework */; };
-		C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809A5B521AD151B00CF6B5E /* TableViewController.swift */; };
-		C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0765F21ACEB9F005EA977 /* Structs.swift */; };
+		C8A0766021ACEB9F005EA977 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0765F21ACEB9F005EA977 /* Transaction.swift */; };
 		C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */; };
 		C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */; };
 		C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */; };
@@ -59,8 +58,7 @@
 		6561D3EE3CBBB2EA6CF4D9CF /* Pods-CS50 Final ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectUITests/Pods-CS50 Final ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		72B7D05B4060DCBE8688B819 /* Pods-CS50 Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final Project/Pods-CS50 Final Project.debug.xcconfig"; sourceTree = "<group>"; };
 		990067DDA250E6112649DACB /* Pods-CS50 Final ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS50 Final ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CS50 Final ProjectTests/Pods-CS50 Final ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C809A5B521AD151B00CF6B5E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		C8A0765F21ACEB9F005EA977 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = Modells/Structs.swift; sourceTree = "<group>"; };
+		C8A0765F21ACEB9F005EA977 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Modells/Transaction.swift; sourceTree = "<group>"; };
 		C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +126,7 @@
 		DC415E4021ACE281008FC5ED /* Modells */ = {
 			isa = PBXGroup;
 			children = (
-				C8A0765F21ACEB9F005EA977 /* Structs.swift */,
-				C809A5B521AD151B00CF6B5E /* TableViewController.swift */,
+				C8A0765F21ACEB9F005EA977 /* Transaction.swift */,
 			);
 			name = Modells;
 			sourceTree = "<group>";
@@ -434,12 +431,11 @@
 				C8ABE43621B0CBF30055E4A3 /* DonationViewController.swift in Sources */,
 				C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */,
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
-				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
+				C8A0766021ACEB9F005EA977 /* Transaction.swift in Sources */,
 				C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
 				C8B46CF521B8A201008C7E00 /* RegisterViewController.swift in Sources */,
-				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
 				DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */,
 				C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */,
 				C8E92AF321B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift in Sources */,
