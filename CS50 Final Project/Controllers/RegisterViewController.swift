@@ -31,6 +31,7 @@ class RegisterViewController: UIViewController {
     @IBAction func tappedRegistered(_ sender: UIButton) {
         
         if RegisterPassword.text! != RegisterConfirmation.text! {
+            self.createAlert(title: "Error", message: "Passwords do not match")
             return
         }
         Auth.auth().createUser(withEmail: RegisterEmail.text!, password: RegisterPassword.text!)  { user, error in
