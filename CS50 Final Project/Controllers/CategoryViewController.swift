@@ -1,6 +1,6 @@
 //  View Controller for Categories
 //  ViewController.swift
-//  CategoriesCharity
+//  CategoriesCharityaa
 //
 //  Copyright © 2018 Julian Frings. All rights reserved.
 //
