@@ -15,8 +15,7 @@ class DonateThanksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NavButton.backgroundColor = UIColor.white
+    
     }
     
 

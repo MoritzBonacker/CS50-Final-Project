@@ -33,35 +33,28 @@ class DonationViewController: UIViewController {
     
     @IBAction func OneTapped(_ sender: UIButton) {
         InsertDatabase(amount: 1)
-        Segue(amount: "1")
     }
     
     @IBAction func FiveTapped(_ sender: UIButton) {
         InsertDatabase(amount: 5)
-        Segue(amount: "5")
     }
     
 
     @IBAction func TenTapped(_ sender: UIButton) {
         InsertDatabase(amount: 10)
-        Segue(amount: "10")
-    }
-    
-    func Segue (amount: String) {
-        self.performSegue(withIdentifier: amount + "ToThanks", sender: self)
     }
     
     func InsertDatabase (amount: Int) {
         let user = Auth.auth().currentUser
-        let ref = Database.database().reference()
-        let data = ["Name": Charity_selected, "Amount": amount, "Timestamp": ServerValue.timestamp() ] as [String : Any]
-        ref.child("user").child(user!.uid).childByAutoId().setValue(data)
+        if user == nil {
+            return()
+        }
+        else {
+            let ref = Database.database().reference()
+            let data = ["Name": Charity_selected, "Amount": amount, "Timestamp": ServerValue.timestamp() ] as [String : Any]
+            ref.child("user").child(user!.uid).childByAutoId().setValue(data)
+        }
     }
-    
-    
-    
-    
-    
 }
 
 // Tutorial: https://www.youtube.com/watch?v=xpTGEoUMiOE

@@ -33,6 +33,17 @@
 		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
 		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
 		C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AE625C21B7135D000A224E /* DonateBackground.png */; };
+		C8B46CF321B89CEC008C7E00 /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CF221B89CEC008C7E00 /* User.png */; };
+		C8B46CF521B8A201008C7E00 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B46CF421B8A201008C7E00 /* RegisterViewController.swift */; };
+		C8B46CF721B8B329008C7E00 /* lightlight_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CF621B8B328008C7E00 /* lightlight_background.png */; };
+		C8B46CF921B8B3AC008C7E00 /* blue_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CF821B8B3AC008C7E00 /* blue_background.png */; };
+		C8B46CFB21B8B767008C7E00 /* giving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CFA21B8B766008C7E00 /* giving.jpg */; };
+		C8B46CFF21B8BBD6008C7E00 /* thankful.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B46CFE21B8BBD5008C7E00 /* thankful.png */; };
+		C8B46D0621B8BF46008C7E00 /* monkey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46D0221B8BF44008C7E00 /* monkey.jpeg */; };
+		C8B46D0721B8BF46008C7E00 /* oceans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46D0321B8BF44008C7E00 /* oceans.jpg */; };
+		C8B46D0821B8BF46008C7E00 /* protest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46D0421B8BF45008C7E00 /* protest.jpg */; };
+		C8B46D0921B8BF46008C7E00 /* children.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46D0521B8BF45008C7E00 /* children.jpg */; };
+		C8B46D0D21B8C0B7008C7E00 /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B46D0C21B8C0B6008C7E00 /* school.jpg */; };
 		C8E92AF321B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */; };
 		C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDA21B77E6100CF7631 /* unicef.jpg */; };
 		C8F39DDF21B77E6200CF7631 /* acs.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F39DDB21B77E6200CF7631 /* acs.png */; };
@@ -114,6 +125,17 @@
 		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
 		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C8AE625C21B7135D000A224E /* DonateBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonateBackground.png; sourceTree = "<group>"; };
+		C8B46CF221B89CEC008C7E00 /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User.png; sourceTree = "<group>"; };
+		C8B46CF421B8A201008C7E00 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C8B46CF621B8B328008C7E00 /* lightlight_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightlight_background.png; sourceTree = "<group>"; };
+		C8B46CF821B8B3AC008C7E00 /* blue_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_background.png; sourceTree = "<group>"; };
+		C8B46CFA21B8B766008C7E00 /* giving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giving.jpg; sourceTree = "<group>"; };
+		C8B46CFE21B8BBD5008C7E00 /* thankful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thankful.png; sourceTree = "<group>"; };
+		C8B46D0221B8BF44008C7E00 /* monkey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpeg; sourceTree = "<group>"; };
+		C8B46D0321B8BF44008C7E00 /* oceans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oceans.jpg; sourceTree = "<group>"; };
+		C8B46D0421B8BF45008C7E00 /* protest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = protest.jpg; sourceTree = "<group>"; };
+		C8B46D0521B8BF45008C7E00 /* children.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = children.jpg; sourceTree = "<group>"; };
+		C8B46D0C21B8C0B6008C7E00 /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
 		C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCellHistory.swift; sourceTree = "<group>"; };
 		C8F39DDA21B77E6100CF7631 /* unicef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unicef.jpg; sourceTree = "<group>"; };
 		C8F39DDB21B77E6200CF7631 /* acs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acs.png; sourceTree = "<group>"; };
@@ -211,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */,
+				C8B46CF421B8A201008C7E00 /* RegisterViewController.swift */,
 				C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */,
 				C8ABE43321AF5EB70055E4A3 /* CharityViewController.swift */,
 				C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */,
@@ -236,6 +259,7 @@
 				C8F39DDC21B77E6200CF7631 /* greenpeace.png */,
 				C8F39DDA21B77E6100CF7631 /* unicef.jpg */,
 				C8858E3821B85D6900B8F23D /* IconColor.png */,
+				C8B46CF221B89CEC008C7E00 /* User.png */,
 				C8F39DF221B78ACD00CF7631 /* Human Rights.png */,
 				C8F39DF321B78ACD00CF7631 /* Public Policy.png */,
 				C8858E3521B85CF100B8F23D /* dark_background.png */,
@@ -250,9 +274,18 @@
 				C8F39DE421B784CC00CF7631 /* 3stars.png */,
 				C8F39DE621B784CD00CF7631 /* 4stars.png */,
 				C8F39DE721B784CD00CF7631 /* 5stars.png */,
+				C8B46CFA21B8B766008C7E00 /* giving.jpg */,
 				C8ABE42B21AF588B0055E4A3 /* Health.png */,
 				C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */,
+				C8B46CF621B8B328008C7E00 /* lightlight_background.png */,
 				DCB9197921B0D029000F051F /* stc.png */,
+				C8B46CF821B8B3AC008C7E00 /* blue_background.png */,
+				C8B46D0521B8BF45008C7E00 /* children.jpg */,
+				C8B46D0C21B8C0B6008C7E00 /* school.jpg */,
+				C8B46D0221B8BF44008C7E00 /* monkey.jpeg */,
+				C8B46D0321B8BF44008C7E00 /* oceans.jpg */,
+				C8B46D0421B8BF45008C7E00 /* protest.jpg */,
+				C8B46CFE21B8BBD5008C7E00 /* thankful.png */,
 				C8ABE43121AF5B7C0055E4A3 /* Donate.png */,
 				C8ABE42821AF588B0055E4A3 /* Poverty.png */,
 				2CC9B76B21AB40FA00CDB78A /* Button Donate.jpg */,
@@ -413,31 +446,41 @@
 				C8F39DE821B784CD00CF7631 /* 0stars.png in Resources */,
 				C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */,
 				DCB9197A21B0D029000F051F /* stc.png in Resources */,
+				C8B46CF921B8B3AC008C7E00 /* blue_background.png in Resources */,
+				C8B46D0621B8BF46008C7E00 /* monkey.jpeg in Resources */,
 				C8F39DDE21B77E6200CF7631 /* unicef.jpg in Resources */,
 				C8858E3721B85CF200B8F23D /* dark_background.png in Resources */,
 				DC5E1144219B9BDD00BDE9B9 /* LaunchScreen.storyboard in Resources */,
 				C8F39DDF21B77E6200CF7631 /* acs.png in Resources */,
 				C8F39DE121B77E6200CF7631 /* WWF.png in Resources */,
+				C8B46D0821B8BF46008C7E00 /* protest.jpg in Resources */,
 				C8F39DFD21B810F100CF7631 /* IconWhite.png in Resources */,
 				C8ABE42F21AF588B0055E4A3 /* Animals.png in Resources */,
 				C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */,
 				C8F39DED21B784CD00CF7631 /* 5stars.png in Resources */,
 				C8F39DEB21B784CD00CF7631 /* 1stars.png in Resources */,
+				C8B46D0921B8BF46008C7E00 /* children.jpg in Resources */,
 				C8ABE42E21AF588B0055E4A3 /* Education.png in Resources */,
+				C8B46CF321B89CEC008C7E00 /* User.png in Resources */,
 				C8F39DF421B78ACD00CF7631 /* Human Rights.png in Resources */,
 				C8F39DEC21B784CD00CF7631 /* 4stars.png in Resources */,
 				DCFBC26621ACF9FD00E44404 /* GoogleService-Info.plist in Resources */,
 				C8F39DE921B784CD00CF7631 /* 2stars.png in Resources */,
 				C8ABE42C21AF588B0055E4A3 /* Environment.png in Resources */,
+				C8B46CF721B8B329008C7E00 /* lightlight_background.png in Resources */,
+				C8B46CFB21B8B767008C7E00 /* giving.jpg in Resources */,
 				DC5E1141219B9BDD00BDE9B9 /* Assets.xcassets in Resources */,
 				DC57AD4021ACE48C0096EA24 /* Info.plist in Resources */,
 				C8858E3621B85CF200B8F23D /* light_background.png in Resources */,
 				C8ABE43021AF588B0055E4A3 /* Health.png in Resources */,
+				C8B46D0721B8BF46008C7E00 /* oceans.jpg in Resources */,
 				C8ABE43221AF5B7C0055E4A3 /* Donate.png in Resources */,
 				DC5E113C219B9BDB00BDE9B9 /* Main.storyboard in Resources */,
+				C8B46D0D21B8C0B7008C7E00 /* school.jpg in Resources */,
 				2CC9B76C21AB40FA00CDB78A /* Button Donate.jpg in Resources */,
 				C8AE625D21B7135E000A224E /* DonateBackground.png in Resources */,
 				C8F39DF521B78ACD00CF7631 /* Public Policy.png in Resources */,
+				C8B46CFF21B8BBD6008C7E00 /* thankful.png in Resources */,
 				C8858E3B21B85DD700B8F23D /* darkdark_background.png in Resources */,
 				C8F39DE021B77E6200CF7631 /* greenpeace.png in Resources */,
 				C8ABE42D21AF588B0055E4A3 /* Poverty.png in Resources */,
@@ -571,6 +614,7 @@
 				C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,
 				DC5E113F219B9BDB00BDE9B9 /* CS50_Final_Project.xcdatamodeld in Sources */,
+				C8B46CF521B8A201008C7E00 /* RegisterViewController.swift in Sources */,
 				C809A5B621AD151B00CF6B5E /* TableViewController.swift in Sources */,
 				DC5E1137219B9BDB00BDE9B9 /* AppDelegate.swift in Sources */,
 				C8ABE42621AF587D0055E4A3 /* ViewControllerTableViewCell.swift in Sources */,
