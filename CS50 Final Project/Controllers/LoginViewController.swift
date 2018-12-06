@@ -1,10 +1,9 @@
-// aaaaaa
+//  Login ViewController
 //  ViewController.swift
 //  CS50 Final Project
 //
-//  Created by Moritz Bonacker on 13.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-/////
+//
 
 
 import UIKit
@@ -18,22 +17,18 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var LoginButton: UIButton!
-    
     @IBOutlet weak var RegisterButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        // Stylizes login and register button
         LoginButton.roundButton()
-        
-       RegisterButton.roundButton()
+        RegisterButton.roundButton()
     }
  
     
     override func viewDidAppear(_ animated: Bool){
-       // self.performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     let loginToMenu = "loginToMenu"

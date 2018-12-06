@@ -1,15 +1,14 @@
-// aaa
+//  View Controller for Profile
 //  ProfileViewController.swift
 //  CS50 Final Project
 //
-//  Created by Julian Frings on 29.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-//////
+//
 
 import UIKit
 import Firebase
 
-// https://www.youtube.com/watch?v=VFtsSEYDNRU
+// Source: https://www.youtube.com/watch?v=VFtsSEYDNRU
 class ProfileViewController: UIViewController {
     
     var names_list = [String] ()

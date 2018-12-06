@@ -1,8 +1,7 @@
-//
+//  App delegation
 //  AppDelegate.swift
 //  CS50 Final Project
 //
-//  Created by Moritz Bonacker on 13.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
 //
 

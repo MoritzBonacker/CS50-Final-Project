@@ -34,7 +34,6 @@
 		C8ABE43621B0CBF30055E4A3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */; };
 		C8ABE43821B0DBD60055E4A3 /* Mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */; };
 		C8ABE43A21B0E5FC0055E4A3 /* DonateThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */; };
-		C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */; };
 		C8ABE43E21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */; };
 		C8ABE44221B0F4980055E4A3 /* Calm_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */; };
 		C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */; };
@@ -132,7 +131,6 @@
 		C8ABE43521B0CBF30055E4A3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		C8ABE43721B0DBD50055E4A3 /* Mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountains.jpg; sourceTree = "<group>"; };
 		C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateThanksViewController.swift; sourceTree = "<group>"; };
-		C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C8ABE43D21B0F2EC0055E4A3 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
 		C8ABE44121B0F4980055E4A3 /* Calm_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Calm_background.jpg; sourceTree = "<group>"; };
 		C8ABE44521B0F5B20055E4A3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 				C8ABE43921B0E5FC0055E4A3 /* DonateThanksViewController.swift */,
 				C8E92AF221B8633900EFC0CB /* ViewControllerTableViewCellHistory.swift */,
 				C8ABE42321AF58660055E4A3 /* CategoryViewController.swift */,
-				C8ABE43B21B0F1140055E4A3 /* MenuViewController.swift */,
 				C8ABE42521AF587D0055E4A3 /* ViewControllerTableViewCell.swift */,
 				DC5E1136219B9BDB00BDE9B9 /* AppDelegate.swift */,
 				DC5E1138219B9BDB00BDE9B9 /* LoginViewController.swift */,
@@ -633,7 +630,6 @@
 				C8ABE42421AF58660055E4A3 /* CategoryViewController.swift in Sources */,
 				C8ABE43A21B0E5FC0055E4A3 /* DonateThanksViewController.swift in Sources */,
 				C8ABE43421AF5EB70055E4A3 /* CharityViewController.swift in Sources */,
-				C8ABE43C21B0F1140055E4A3 /* MenuViewController.swift in Sources */,
 				C8A0766021ACEB9F005EA977 /* Structs.swift in Sources */,
 				C8ABE44621B0F5B20055E4A3 /* ProfileViewController.swift in Sources */,
 				DC5E1139219B9BDB00BDE9B9 /* LoginViewController.swift in Sources */,

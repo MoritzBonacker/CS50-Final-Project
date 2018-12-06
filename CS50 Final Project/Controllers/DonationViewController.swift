@@ -1,10 +1,9 @@
-//
+//  View Controller for Donations
 //  DonationViewController.swift
 //  CS50 Final Project
 //
-//  Created by Julian Frings on 29.11.18.
 //  Copyright © 2018 CS50 Project Team. All rights reserved.
-////
+//
 
 import UIKit
 import Firebase
@@ -23,7 +22,7 @@ class DonationViewController: UIViewController {
         
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view
+        // Stylizes donation buttons
         DollarButton1.roundButton()
         DollarButton2.roundButton()
         DollarButton3.roundButton()
@@ -57,29 +56,18 @@ class DonationViewController: UIViewController {
     }
 }
 
-// Tutorial: https://www.youtube.com/watch?v=xpTGEoUMiOE
-
+// Function to stylized button
+// Source: https://www.youtube.com/watch?v=xpTGEoUMiOE
 extension UIButton {
     func roundButton() {
         self.backgroundColor = UIColor.black
-        // Rounding corners and applying to both corners therefore deviding by 2
+        // Rounding corners and applying to both corners in relation to height of button
         self.layer.cornerRadius = self.frame.height / 3
+        // Stylization of button shadow
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 4
         self.layer.shadowOpacity = 0.5
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
     }
 }
-
-
-    /*//
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
